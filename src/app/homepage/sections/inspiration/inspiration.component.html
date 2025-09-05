@@ -1,9 +1,20 @@
 <!-- Inspiration Section -->
 <section class="inspiration-section">
+  <!-- Hero Section with Large Car Image -->
+  <div class="hero-section">
+    <div class="hero-text-container">
+      <h1 class="hero-title">{{ 'inspiration.hero.title' | translate }}</h1>
+      <p class="hero-subtitle">{{ 'inspiration.hero.subtitle' | translate }}</p>
+    </div>
+    <div class="hero-image-container">
+      <img [src]="heroImage.src" [alt]="heroImage.altKey | translate" class="hero-image">
+    </div>
+  </div>
+
   <div class="inspiration-container">
     <!-- Section Header -->
     <div class="inspiration-header">
-      <h3 class="inspiration-subtitle">{{ 'inspiration.subtitle' | translate }}</h3>
+
       <h2 class="inspiration-title">{{ 'inspiration.title' | translate }}</h2>
     </div>
 
@@ -71,6 +82,9 @@
   <div class="inspiration-container">
     <div class="cta-container">
       <button class="cta-button">{{ 'inspiration.gallery.viewAll' | translate }}</button>
+      <div class="show-all-link">
+        <a href="#" class="show-all-text">Show all wheels ></a>
+      </div>
     </div>
   </div>
 </section>

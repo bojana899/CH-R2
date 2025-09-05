@@ -1,8 +1,62 @@
 /* Inspiration Section */
 .inspiration-section {
   background-color: white;
-  padding: 4rem 0;
+  padding: 0 0 4vh 0;
   font-family: 'TT Norms Pro', sans-serif;
+}
+
+/* Hero Section */
+.hero-section {
+  width: 100%;
+  margin-bottom: 4rem;
+  padding-top: 6vh;
+}
+
+.hero-text-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.hero-image-container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+  overflow: hidden;
+}
+
+.hero-image {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+  border-radius: 10px;
+}
+
+.hero-title {
+  text-align: center;
+  font-family: 'TT Norms Pro', sans-serif;
+  font-size: 46px;
+  line-height: 74px;
+  font-weight: 500;
+  letter-spacing: 5.52px;
+  color: #666666;
+  text-transform: uppercase;
+  opacity: 1;
+  margin: 0 0 0.5rem 0;
+}
+
+.hero-subtitle {
+  text-align: center;
+  font: normal normal normal 20px/26px TT Norms Pro;
+  letter-spacing: 0px;
+  color: #666666;
+  opacity: 1;
+  margin: 0;
 }
 
 .inspiration-container {
@@ -30,16 +84,16 @@
 }
 
 .inspiration-title {
-  text-align: left;
-  font: normal normal medium 46px/60px TT Norms Pro;
+  text-align: center;
+  font-family: 'TT Norms Pro', sans-serif;
+  font-size: 46px;
+  line-height: 74px;
+  font-weight: 500;
   letter-spacing: 5.52px;
-  color: #2B2B30;
+  color: #666666;
   text-transform: uppercase;
   opacity: 1;
   margin: 0;
-  font-size: 29px;
-  font-weight: 500;
-  line-height: 60px;
 }
 
 /* Gallery Container */
@@ -142,27 +196,52 @@
 /* Call to Action Button */
 .cta-container {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
 }
 
 .cta-button {
-  background: white;
-  color: #FF0024;
-  border: 2px solid #FF0024;
-  padding: 1rem 2rem;
-  border-radius: 28px;
-  font-size: 0.875rem;
-  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: auto;
+  min-width: 280px;
+  height: 44px;
+  padding: 0 2rem;
+  background: #DB0000 0% 0% no-repeat padding-box;
+  border-radius: 25px;
+  color: #fff;
+  font-family: 'Arial', 'Helvetica', sans-serif;
+  font-size: 16px;
+  font-weight: 200;
   text-transform: uppercase;
-  letter-spacing: 0.5px;
+  letter-spacing: 1px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+  border: none;
   cursor: pointer;
-  transition: all 0.3s ease;
-  font-family: 'TT Norms Pro', sans-serif;
 }
 
 .cta-button:hover {
   background: #FF0024;
   color: white;
+}
+
+.show-all-link {
+  text-align: center;
+}
+
+.show-all-text {
+  color: #FF0024;
+  text-decoration: none;
+  font-size: 0.875rem;
+  font-weight: normal;
+  transition: color 0.3s ease;
+}
+
+.show-all-text:hover {
+  color: #2B2B30;
 }
 
 /* Responsive Design */
@@ -177,8 +256,37 @@
 }
 
 @media (max-width: 1024px) {
+  .hero-text-container {
+    padding: 0 1rem;
+  }
+  
+  .hero-image-container {
+    padding: 0 1rem;
+  }
+  
+  .hero-title {
+    font-family: 'TT Norms Pro', sans-serif;
+    font-size: 46px;
+    line-height: 74px;
+    font-weight: 500;
+    letter-spacing: 5.52px;
+    color: #666666;
+    margin: 0 0 1rem 0;
+  }
+  
+  .hero-subtitle {
+    font: normal normal normal 18px/24px TT Norms Pro;
+    letter-spacing: 0px;
+    color: #666666;
+  }
+  
   .inspiration-title {
-    font-size: 2.5rem;
+    font-family: 'TT Norms Pro', sans-serif;
+    font-size: 46px;
+    line-height: 74px;
+    font-weight: 500;
+    letter-spacing: 5.52px;
+    color: #666666;
   }
   
   .gallery-container {
@@ -209,6 +317,30 @@
 }
 
 @media (max-width: 768px) {
+  .hero-text-container {
+    padding: 0 1.5rem;
+  }
+  
+  .hero-image-container {
+    padding: 0 1.5rem;
+  }
+  
+  .hero-title {
+    font-family: 'TT Norms Pro', sans-serif;
+    font-size: 46px;
+    line-height: 74px;
+    font-weight: 500;
+    letter-spacing: 5.52px;
+    color: #666666;
+    margin: 0 0 1rem 0;
+  }
+  
+  .hero-subtitle {
+    font: normal normal normal 16px/22px TT Norms Pro;
+    letter-spacing: 0px;
+    color: #666666;
+  }
+  
   .inspiration-section {
     padding: 3rem 0;
   }
@@ -222,7 +354,12 @@
   }
   
   .inspiration-title {
-    font-size: 2rem;
+    font-family: 'TT Norms Pro', sans-serif;
+    font-size: 46px;
+    line-height: 74px;
+    font-weight: 500;
+    letter-spacing: 5.52px;
+    color: #666666;
   }
   
   .gallery-grid {
@@ -273,6 +410,30 @@
 }
 
 @media (max-width: 480px) {
+  .hero-text-container {
+    padding: 0 1rem;
+  }
+  
+  .hero-image-container {
+    padding: 0 1rem;
+  }
+  
+  .hero-title {
+    font-family: 'TT Norms Pro', sans-serif;
+    font-size: 46px;
+    line-height: 74px;
+    font-weight: 500;
+    letter-spacing: 5.52px;
+    color: #666666;
+    margin: 0 0 1rem 0;
+  }
+  
+  .hero-subtitle {
+    font: normal normal normal 14px/20px TT Norms Pro;
+    letter-spacing: 0px;
+    color: #666666;
+  }
+  
   .inspiration-section {
     padding: 2rem 0;
   }
@@ -286,7 +447,12 @@
   }
   
   .inspiration-title {
-    font-size: 1.75rem;
+    font-family: 'TT Norms Pro', sans-serif;
+    font-size: 46px;
+    line-height: 74px;
+    font-weight: 500;
+    letter-spacing: 5.52px;
+    color: #666666;
   }
   
   /* Hide desktop gallery on mobile */

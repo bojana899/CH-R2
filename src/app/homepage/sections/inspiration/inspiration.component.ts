@@ -12,38 +12,35 @@ import { TranslatePipe } from '../../../pipes/translate.pipe';
 export class InspirationComponent {
   currentSlide = 0;
   
+  heroImage = {
+    src: 'assets/BBS CH-R II Export/BBS_BMW_M3_CSL_G80_001.jpg',
+    altKey: 'inspiration.hero.alt'
+  };
+  
   galleryImages = [
     {
-      src: 'assets/Startseite/Gallery/home_gallery_1.jpg',
+      src: 'assets/BBS CH-R II Export/ch-r-2-gallery_1.jpg',
       altKey: 'inspiration.gallery.alt'
     },
     {
-      src: 'assets/Startseite/Gallery/home_gallery_2.jpg',
+      src: 'assets/BBS CH-R II Export/ch-r-2-gallery_2.jpg',
       altKey: 'inspiration.gallery.alt 2'
     },
     {
-      src: 'assets/Startseite/Gallery/home_gallery_3.jpg',
+      src: 'assets/BBS CH-R II Export/ch-r-2-gallery_3.jpg',
       altKey: 'inspiration.gallery.alt 3'
     },
     {
-      src: 'assets/Startseite/Gallery/home_gallery_4.jpg',
+      src: 'assets/BBS CH-R II Export/ch-r-2-gallery_4.jpg',
       altKey: 'inspiration.gallery.alt 4'
     },
     {
-      src: 'assets/Startseite/Gallery/home_gallery_5.jpg',
+      src: 'assets/BBS CH-R II Export/ch-r-2-gallery_5.jpg',
       altKey: 'inspiration.gallery.alt 5'
     },
     {
-      src: 'assets/Startseite/Gallery/home_gallery_6.jpg',
+      src: 'assets/BBS CH-R II Export/ch-r-2-gallery_6.jpg',
       altKey: 'inspiration.gallery.alt 6'
-    },
-    {
-      src: 'assets/Startseite/Gallery/home_gallery_7.jpg',
-      altKey: 'inspiration.gallery.alt 7'
-    },
-    {
-      src: 'assets/Startseite/Gallery/home_gallery_8.jpg',
-      altKey: 'inspiration.gallery.alt 8'
     }
   ];
 
@@ -78,23 +75,13 @@ export class InspirationComponent {
   }
 
   getNavigationDashes() {
-    // Return 6 dashes for mobile, 3 for desktop
-    if (window.innerWidth <= 480) {
-      return [1, 2, 3, 4, 5, 6];
-    }
-    // Desktop: return 3 dashes as before
+    // Return 3 dashes for all screen sizes
     return [1, 2, 3];
   }
 
   getCurrentDashIndex() {
-    // For mobile: direct mapping to current slide
-    if (window.innerWidth <= 480) {
-      return this.currentSlide;
-    }
-    // Desktop: keep original behavior - map current slide to dash index (0, 1, or 2)
-    if (this.currentSlide < 3) return 0;
-    if (this.currentSlide < 6) return 1;
-    return 2;
+    // Map current slide to dash index (0-2 for 3 dashes)
+    return this.currentSlide % 3;
   }
 
   nextSlide() {
@@ -106,14 +93,7 @@ export class InspirationComponent {
   }
 
   goToSlide(dashIndex: number) {
-    // For mobile: direct mapping
-    if (window.innerWidth <= 480) {
-      this.currentSlide = dashIndex;
-    } else {
-      // For desktop: map dash index to slide index
-      if (dashIndex === 0) this.currentSlide = 0;
-      else if (dashIndex === 1) this.currentSlide = 3;
-      else if (dashIndex === 2) this.currentSlide = 6;
-    }
+    // Map dash index to slide index
+    this.currentSlide = dashIndex;
   }
 }

@@ -151,8 +151,13 @@
     }
   },
   "inspiration": {
+    "hero": {
+      "title": "LET THEM TWIST THEIR HEADS",
+      "subtitle": "Customization options for a wheel that attracts attention",
+      "alt": "BBS BMW M3 CSL with custom wheels"
+    },
     "subtitle": "LOOKING FOR INSPIRATION?",
-    "title": "ALL EYES ON BBS",
+    "title": "CUSTOMIZATION OPTIONS FOR A WHEEL THAT ATTRACTS ATTENTION",
     "gallery": {
       "alt": "BBS Wheels Gallery",
       "viewAll": "VIEW COMPLETE WHEEL GALLERY"

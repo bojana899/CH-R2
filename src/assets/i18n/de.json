@@ -151,8 +151,13 @@
     }
   },
   "inspiration": {
+    "hero": {
+      "title": "LASS SIE IHRE KÖPFE DREHEN",
+      "subtitle": "Anpassungsoptionen für ein Rad, das Aufmerksamkeit erregt",
+      "alt": "BBS BMW M3 CSL mit individuellen Rädern"
+    },
     "subtitle": "LUST AUF INSPIRATION?",
-    "title": "ALLE BLICKE AUF BBS",
+    "title": "Anpassungsoptionen für ein Rad, das Aufmerksamkeit erregt",
     "gallery": {
       "alt": "BBS Räder Galerie",
       "viewAll": "VOLLSTÄNDIGE RADGALERIE ANSEHEN"

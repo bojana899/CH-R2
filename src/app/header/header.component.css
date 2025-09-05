@@ -3,6 +3,29 @@
   font-family: 'TT Norms Pro', sans-serif;
 }
 
+/* Large screens - 1920px and above */
+@media (min-width: 1920px) {
+  header {
+    padding-left: 200px !important;
+    padding-right: 200px !important;
+  }
+}
+
+/* Responsive margins for smaller screens */
+@media (max-width: 1919px) and (min-width: 1600px) {
+  header {
+    padding-left: 100px !important;
+    padding-right: 100px !important;
+  }
+}
+
+@media (max-width: 1599px) and (min-width: 1400px) {
+  header {
+    padding-left: 50px !important;
+    padding-right: 50px !important;
+  }
+}
+
 /* Navigation link hover effects */
 nav a::after {
   content: '';
