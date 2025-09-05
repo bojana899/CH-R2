@@ -10,10 +10,11 @@ import { ActionsComponent } from './sections/actions/actions.component';
 import { FooterComponent } from '../footer/footer.component';
 import { SupportContactComponent } from './sections/support-contact/support-contact.component';
 import { WheelsUnlimitedSectionComponent } from './sections/wheels-unlimited-section/wheels-unlimited-section.component';
+import { GoUnlimitedComponent } from './sections/go-unlimited/go-unlimited.component';
 @Component({
   selector: 'app-homepage',
   standalone: true,
-  imports: [CommonModule, HeroCarouselComponent, WheelUnlimitedComponent,WheelsUnlimitedSectionComponent, DesignLinesComponent, UnlimitedComponent, InspirationComponent, WheelsSectionComponent, ActionsComponent, SupportContactComponent, FooterComponent],
+  imports: [CommonModule, HeroCarouselComponent, GoUnlimitedComponent,WheelUnlimitedComponent,WheelsUnlimitedSectionComponent, DesignLinesComponent, UnlimitedComponent, InspirationComponent, WheelsSectionComponent, ActionsComponent, SupportContactComponent, FooterComponent],
   templateUrl: './homepage.component.html',
   styleUrl: './homepage.component.css'
 })

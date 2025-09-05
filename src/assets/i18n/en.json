@@ -162,5 +162,46 @@
       "alt": "BBS Wheels Gallery",
       "viewAll": "VIEW COMPLETE WHEEL GALLERY"
     }
+  },
+  "goUnlimited": {
+    "title": "GO UNLIMITED",
+    "standard": {
+      "description": "The most important customization options",
+      "image": {
+        "alt": "BBS CH-R II Standard Satin Black Wheel"
+      }
+    },
+    "unlimited": {
+      "description": "Infinite possibilities. Your style, your wheel.",
+      "image": {
+        "alt": "BBS CH-R II Unlimited Gold Wheel"
+      }
+    },
+    "comparison": {
+      "dimensions": "DIMENSIONS",
+      "fit": "FIT",
+      "style": "STYLE",
+      "flowForming": "Flow Forming"
+    },
+    "fit": {
+      "standard": {
+        "alt": "Standard Bolt Pattern"
+      },
+      "unlimited": {
+        "alt": "Unlimited Bolt Pattern"
+      }
+    },
+    "style": {
+      "standard": {
+        "alt": "Standard Color Palette"
+      },
+      "unlimited": {
+        "alt": "Unlimited Color Palette"
+      }
+    },
+    "buttons": {
+      "buyNow": "BUY NOW",
+      "configure": "CONFIGURE NOW"
+    }
   }
 }

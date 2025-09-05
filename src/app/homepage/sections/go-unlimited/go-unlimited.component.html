@@ -1,0 +1,157 @@
+<!-- Go Unlimited Section -->
+<section class="go-unlimited-section">
+  <div class="go-unlimited-container">
+    
+    <!-- Main Title -->
+    <h2 class="go-unlimited-title">
+      CH-R II - {{ 'goUnlimited.title' | translate }}
+    </h2>
+    
+    <!-- Product Comparison -->
+    <div class="product-comparison">
+      
+      <!-- Left Column - CH-R II STANDARD -->
+      <div class="product-column standard">
+        <div class="product-image-container">
+          <img [src]="standardWheelImage.src" [alt]="standardWheelImage.altKey | translate" class="product-image">
+        </div>
+        
+        <div class="wheel-selector">
+          <div class="wheel-option" 
+               *ngFor="let wheel of wheelSelectors.slice(0, 3); let i = index"
+               [class.selected]="selectedStandardWheel === i"
+               (click)="selectStandardWheel(i)">
+            <img [src]="wheel.src" [alt]="wheel.name" class="wheel-thumbnail">
+          </div>
+        </div>
+        
+        <h3 class="product-name">CH-R II STANDARD</h3>
+        <p class="product-description">{{ 'goUnlimited.standard.description' | translate }}</p>
+        
+        <button class="cta-button primary">
+          {{ 'goUnlimited.buttons.buyNow' | translate }}
+        </button>
+      </div>
+      
+      <!-- Right Column - CH-R II UNLIMITED -->
+      <div class="product-column unlimited">
+        <div class="new-badge">NEW</div>
+        <div class="product-image-container">
+          <img [src]="unlimitedWheelImage.src" [alt]="unlimitedWheelImage.altKey | translate" class="product-image">
+        </div>
+        
+        <div class="wheel-selector">
+          <div class="wheel-option" 
+               *ngFor="let wheel of wheelSelectors; let i = index"
+               [class.selected]="selectedUnlimitedWheel === i"
+               (click)="selectUnlimitedWheel(i)">
+            <img [src]="wheel.src" [alt]="wheel.name" class="wheel-thumbnail">
+          </div>
+        </div>
+        
+        <h3 class="product-name">CH-R II UNLIMITED</h3>
+        <p class="product-description">{{ 'goUnlimited.unlimited.description' | translate }}</p>
+        
+        <button class="cta-button primary">
+          {{ 'goUnlimited.buttons.configure' | translate }}
+        </button>
+      </div>
+      
+    </div>
+    
+    <!-- Feature Comparison -->
+    <div class="feature-comparison">
+      
+      <!-- Dimensions Section -->
+      <div class="section-title">{{ 'goUnlimited.comparison.dimensions' | translate }}</div>
+      <div class="section-line"></div>
+      <div class="section-icon" (click)="toggleDimensions()">{{ dimensionsExpanded ? '−' : '+' }}</div>
+      <div class="comparison">
+        <div class="column">
+          <div class="main-text">45 Base wheels</div>
+          <div class="subtext" [class.expanded]="dimensionsExpanded">
+            3 Concavities<br>
+            3 diameters<br>
+            5 wheel widths<br>
+            from 15,5 kg
+          </div>
+        </div>
+        <div class="column">
+          <div class="main-text">63 Base wheels</div>
+          <div class="subtext" [class.expanded]="dimensionsExpanded">
+            3 concavities<br>
+            3 diameters<br>
+            7 wheel widths<br>
+            from 15,2 kg
+          </div>
+        </div>
+      </div>
+      
+      <!-- Fit Section -->
+      <div class="section-title">{{ 'goUnlimited.comparison.fit' | translate }}</div>
+      <div class="section-line"></div>
+      <div class="section-icon" (click)="toggleFit()">{{ fitExpanded ? '−' : '+' }}</div>
+      <div class="comparison">
+        <div class="column">
+          <div class="pattern-image">
+            <img [src]="fitStandardImage.src" [alt]="fitStandardImage.altKey | translate" class="pattern-img">
+          </div>
+          <div class="main-text">10 combinations</div>
+          <div class="subtext" [class.expanded]="fitExpanded">
+            5-hole bolt pattern – fixed<br>
+            2 rim offsets – fixed<br>
+            Aluminum centering rings
+          </div>
+        </div>
+        <div class="column">
+          <div class="pattern-image">
+            <img [src]="fitUnlimitedImage.src" [alt]="fitUnlimitedImage.altKey | translate" class="pattern-img">
+          </div>
+          <div class="main-text">120 combinations</div>
+          <div class="subtext" [class.expanded]="fitExpanded">
+            12 adjustable bolt patterns<br>
+            10 adjustable rim offsets<br>
+            Composite centering rings
+          </div>
+        </div>
+      </div>
+      
+      <!-- Style Section -->
+      <div class="section-title">{{ 'goUnlimited.comparison.style' | translate }}</div>
+      <div class="section-line"></div>
+      <div class="section-icon" (click)="toggleStyle()">{{ styleExpanded ? '−' : '+' }}</div>
+      <div class="comparison">
+        <div class="column">
+          <div class="pattern-image">
+            <img [src]="styleStandardImage.src" [alt]="styleStandardImage.altKey | translate" class="pattern-img">
+          </div>
+          <div class="main-text">3 versions</div>
+          <div class="subtext" [class.expanded]="styleExpanded">
+            Permanently defined<br>
+            3 wheel colors<br>
+            Center caps - pre-defined<br>
+            Rim protectors - pre-defined<br>
+            Wheel bolts - pre-defined<br>
+            Valve caps - pre-defined
+          </div>
+        </div>
+        <div class="column">
+          <div class="pattern-image">
+            <img [src]="styleUnlimitedImage.src" [alt]="styleUnlimitedImage.altKey | translate" class="pattern-img">
+          </div>
+          <div class="main-text">345,600 versions</div>
+          <div class="subtext" [class.expanded]="styleExpanded">
+            Freely configurable<br>
+            80 wheel colors<br>
+            24 center caps<br>
+            6 rim protectors<br>
+            5 wheel bolt versions<br>
+            8 valve caps
+          </div>
+        </div>
+      </div>
+      
+    </div>
+    
+  </div>
+</section>

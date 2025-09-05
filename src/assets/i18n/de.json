@@ -162,5 +162,46 @@
       "alt": "BBS Räder Galerie",
       "viewAll": "VOLLSTÄNDIGE RADGALERIE ANSEHEN"
     }
+  },
+  "goUnlimited": {
+    "title": "GO UNLIMITED",
+    "standard": {
+      "description": "Die wichtigsten Anpassungsoptionen",
+      "image": {
+        "alt": "BBS CH-R II Standard Satin Black Rad"
+      }
+    },
+    "unlimited": {
+      "description": "Unendliche Möglichkeiten. Ihr Stil, Ihr Rad.",
+      "image": {
+        "alt": "BBS CH-R II Unlimited Gold Rad"
+      }
+    },
+    "comparison": {
+      "dimensions": "DIMENSIONEN",
+      "fit": "PASSFORM",
+      "style": "STIL",
+      "flowForming": "Flow Forming"
+    },
+    "fit": {
+      "standard": {
+        "alt": "Standard Lochkreis"
+      },
+      "unlimited": {
+        "alt": "Unlimited Lochkreis"
+      }
+    },
+    "style": {
+      "standard": {
+        "alt": "Standard Farbpalette"
+      },
+      "unlimited": {
+        "alt": "Unlimited Farbpalette"
+      }
+    },
+    "buttons": {
+      "buyNow": "JETZT KAUFEN",
+      "configure": "JETZT KONFIGURIEREN"
+    }
   }
 }
