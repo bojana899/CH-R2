@@ -203,5 +203,22 @@
       "buyNow": "JETZT KAUFEN",
       "configure": "JETZT KONFIGURIEREN"
     }
+  },
+  "wheelsUnlimited": {
+    "new": "NEU",
+    "unlimitedWheel": "UNLIMITED RAD",
+    "available": "VERFÜGBAR",
+    "productTitle": "CH-RII",
+    "productImage": {
+      "alt": "BBS CH-RII Unlimited Rad"
+    },
+    "features": {
+      "unlimitedSystem": "Unlimited System - Geeignet für fast jedes Fahrzeug mit 5-Loch-Bolzenmuster.",
+      "variations": "345.600 mögliche Variationen. Gestalten Sie Ihr eigenes einzigartiges Rad durch die Auswahl aus einer Vielzahl von Farben für das Rad, die Radkappen, den Felgenschutz, die Radschrauben und die Ventildeckel.",
+      "standardVersions": "Zusätzlich gibt es drei permanent definierte Standardversionen.",
+      "availableSizes": "Verfügbar in Größen von 20\", 21\" und 22\"."
+    },
+    "configureButton": "IHR RAD KONFIGURIEREN",
+    "allDetailsButton": "ALLE DETAILS"
   }
 }

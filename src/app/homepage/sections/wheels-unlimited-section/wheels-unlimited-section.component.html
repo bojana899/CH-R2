@@ -3,52 +3,52 @@
   <div class="wheels-unlimited-container">
     <!-- Left Section - Product Image -->
     <div class="product-image-container">
-      <img src="assets/BBS CH-R II Export/Vergleich_Unlimited_Gold.png" alt="BBS CH-RII Unlimited Wheel" class="product-image">
+      <img src="assets/BBS CH-R II Export/Vergleich_Unlimited_Gold.png" [alt]="'wheelsUnlimited.productImage.alt' | translate" class="product-image">
     </div>
 
     <!-- Right Section - Text Content and Call-to-Action -->
     <div class="content-container">
       <!-- Top Heading -->
       <div class="top-heading">
-        <span class="highlight-red">NEW</span>
-        <span class="highlight-grey"> - UNLIMITED WHEEL </span>
-        <span class="highlight-red">AVAILABLE</span>
+        <span class="highlight-red">{{ 'wheelsUnlimited.new' | translate }}</span>
+        <span class="highlight-grey"> - {{ 'wheelsUnlimited.unlimitedWheel' | translate }} </span>
+        <span class="highlight-red">{{ 'wheelsUnlimited.available' | translate }}</span>
       </div>
 
       <!-- Product Title -->
       <div class="product-title">
-        <span class="title-text">CH-RII</span>
+        <span class="title-text">{{ 'wheelsUnlimited.productTitle' | translate }}</span>
         <span class="title-icon">■</span>
       </div>
 
       <!-- Primary Call-to-Action Button -->
-      <button class="primary-cta-button">
-        CONFIGURE YOUR WHEEL
-      </button>
+      <a [href]="configureUrl" target="_blank" class="primary-cta-button">
+        {{ 'wheelsUnlimited.configureButton' | translate }}
+      </a>
 
       <!-- Feature List -->
       <div class="feature-list">
         <div class="feature-item">
           <span class="checkmark">✓</span>
-          <span class="feature-text">Unlimited System - Suitable for almost every vehicle with a 5-hole bolt pattern.</span>
+          <span class="feature-text">{{ 'wheelsUnlimited.features.unlimitedSystem' | translate }}</span>
         </div>
         <div class="feature-item">
           <span class="checkmark">✓</span>
-          <span class="feature-text">345,600 possible variations. Design your own unique wheel by choosing from a variety of colors for the wheel, center caps, rim protector, wheel bolts, and valve caps.</span>
+          <span class="feature-text">{{ 'wheelsUnlimited.features.variations' | translate }}</span>
         </div>
         <div class="feature-item">
           <span class="checkmark">✓</span>
-          <span class="feature-text">Additionally, there are three permanently defined standard versions.</span>
+          <span class="feature-text">{{ 'wheelsUnlimited.features.standardVersions' | translate }}</span>
         </div>
         <div class="feature-item">
           <span class="checkmark">✓</span>
-          <span class="feature-text">Available in sizes from 20", 21" and 22".</span>
+          <span class="feature-text">{{ 'wheelsUnlimited.features.availableSizes' | translate }}</span>
         </div>
       </div>
 
       <!-- Secondary Call-to-Action Button -->
-      <button class="secondary-cta-button">
-        ALL DETAILS
+      <button class="secondary-cta-button" (click)="scrollToCompare()">
+        {{ 'wheelsUnlimited.allDetailsButton' | translate }}
       </button>
     </div>
   </div>

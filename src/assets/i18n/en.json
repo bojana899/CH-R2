@@ -203,5 +203,22 @@
       "buyNow": "BUY NOW",
       "configure": "CONFIGURE NOW"
     }
+  },
+  "wheelsUnlimited": {
+    "new": "NEW",
+    "unlimitedWheel": "UNLIMITED WHEEL",
+    "available": "AVAILABLE",
+    "productTitle": "CH-RII",
+    "productImage": {
+      "alt": "BBS CH-RII Unlimited Wheel"
+    },
+    "features": {
+      "unlimitedSystem": "Unlimited System - Suitable for almost every vehicle with a 5-hole bolt pattern.",
+      "variations": "345,600 possible variations. Design your own unique wheel by choosing from a variety of colors for the wheel, center caps, rim protector, wheel bolts, and valve caps.",
+      "standardVersions": "Additionally, there are three permanently defined standard versions.",
+      "availableSizes": "Available in sizes from 20\", 21\" and 22\"."
+    },
+    "configureButton": "CONFIGURE YOUR WHEEL",
+    "allDetailsButton": "ALL DETAILS"
   }
 }

@@ -18,6 +18,7 @@ export class HeaderComponent implements OnInit, OnDestroy {
   showMobileMenu: boolean = false;
   showSearch: boolean = false;
   cartItemCount: number = 0;
+  dropdownPosition: { top: string; left?: string; right?: string } = { top: '0px', left: '0px' };
 
   constructor(
     private elementRef: ElementRef,
@@ -45,14 +46,50 @@ export class HeaderComponent implements OnInit, OnDestroy {
 
   @HostListener('document:click', ['$event'])
   clickOutside(event: Event) {
-    if (!this.elementRef.nativeElement.querySelector('.language-selector')?.contains(event.target as Node)) {
+    const languageSelector = this.elementRef.nativeElement.querySelector('.language-selector');
+    const languageDropdown = document.querySelector('.language-dropdown');
+    
+    if (!languageSelector?.contains(event.target as Node) && 
+        !languageDropdown?.contains(event.target as Node)) {
       this.showLanguageDropdown = false;
+    }
+  }
+
+  @HostListener('window:resize', ['$event'])
+  onWindowResize() {
+    if (this.showLanguageDropdown) {
+      this.calculateDropdownPosition();
     }
   }
 
   toggleLanguageDropdown(event: Event): void {
     event.stopPropagation();
     this.showLanguageDropdown = !this.showLanguageDropdown;
+    
+    if (this.showLanguageDropdown) {
+      this.calculateDropdownPosition();
+    }
+  }
+
+  private calculateDropdownPosition(): void {
+    const languageSelector = this.elementRef.nativeElement.querySelector('.language-selector');
+    if (languageSelector) {
+      const rect = languageSelector.getBoundingClientRect();
+      
+      // Center the dropdown under the language selector
+      const dropdownWidth = 80; // min-w-[80px] from CSS
+      const selectorCenter = rect.left + (rect.width / 2);
+      const dropdownLeft = selectorCenter - (dropdownWidth / 2);
+      
+      // Ensure dropdown doesn't go off screen
+      const finalLeft = Math.max(10, Math.min(dropdownLeft, window.innerWidth - dropdownWidth - 10));
+      
+      this.dropdownPosition = {
+        top: `${rect.bottom}px`,
+        left: `${finalLeft}px`,
+        right: 'auto'
+      };
+    }
   }
 
   selectLanguage(language: string, event: Event): void {
