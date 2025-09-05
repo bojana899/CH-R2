@@ -1,0 +1,408 @@
+.unlimited-section {
+  width: 100%;
+  height: 1413px;
+  background: 
+    url('../../../../assets/Startseite/unlimited_bg.png') no-repeat center center,
+    transparent linear-gradient(180deg, #2B2B30 0%, #000000 100%) 0% 0% no-repeat padding-box;
+  background-size: 100% auto, cover;
+  opacity: 1;
+  padding: 4rem 0;
+}
+
+.unlimited-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Header Section */
+.unlimited-header {
+  text-align: left;
+  margin-bottom: 4rem;
+}
+
+.unlimited-title {
+  font-family: 'TT Norms Pro', sans-serif;
+  font-size: 46px;
+  font-weight: 500;
+  line-height: 60px;
+  color: #D9D9DE;
+  text-align: left;
+  text-transform: uppercase;
+  letter-spacing: 5.52px;
+  opacity: 1;
+  margin-bottom: 2rem;
+}
+
+.unlimited-subtitle {
+  font-family: 'TT Norms Pro', sans-serif;
+  font-size: 20px;
+  font-weight: normal;
+  line-height: 32px;
+  color: #FFFFFF;
+  text-align: left;
+  letter-spacing: 0.2px;
+  opacity: 1;
+  max-width: 800px;
+  margin: 0;
+}
+
+/* Feature Cards */
+.feature-cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  margin-bottom: 4rem;
+  justify-items: center;
+}
+
+.feature-card {
+  background: #3A3A40 0% 0% no-repeat padding-box;
+  border: 1px solid #B8B9C1;
+  border-radius: 12px;
+  opacity: 0.8;
+  padding: 1rem;
+  text-align: center;
+  width: 100%;
+  max-width: 400px;
+  height: 354px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+
+.card-header {
+  margin-bottom: 2.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.card-icon {
+  width: 90px;
+  height: 60px;
+  object-fit: contain;
+}
+
+.card-subtitle {
+  font-family: 'TT Norms Pro', sans-serif;
+  font-size: 20px;
+  font-weight: normal;
+  line-height: 0px;
+  color: #B8B9C1;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 2.4px;
+  opacity: 1;
+  margin-bottom: 0rem;
+  margin-top: 0px;
+}
+
+.bbs-logo {
+  font-family: 'TT Norms Pro', sans-serif;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #CB152F;
+  background: #000000;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  display: inline-block;
+}
+
+.card-title {
+  font-family: 'TT Norms Pro', sans-serif;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 30px;
+  color: #FFFFFF;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 2.88px;
+  opacity: 1;
+  margin-bottom: 1rem;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+}
+
+.card-line {
+  width: 100%;
+  max-width: 350px;
+  height: 1px;
+  background: transparent linear-gradient(90deg, #2B2B3000 0%, #B8B9C1 51%, #2B2B3000 100%) 0% 0% no-repeat padding-box;
+  opacity: 1;
+  margin: 0 auto 1.5rem auto;
+}
+
+.card-description {
+  font-family: 'TT Norms Pro', sans-serif;
+  font-size: 16px;
+  font-weight: normal;
+  line-height: 24px;
+  color: #FFFFFF;
+  text-align: center;
+  letter-spacing: 0.2px;
+  opacity: 1;
+  margin: 0;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  hyphens: auto;
+}
+
+/* Bottom Content Section */
+.bottom-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  margin-bottom: 4rem;
+  max-width: 1000px;
+  margin-left: 0px;
+  margin-right: 0px;
+  padding: 0 0rem;
+}
+
+.content-left,
+.content-right {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  align-items: flex-start;
+  width: 100%;
+}
+
+.content-image {
+  flex: 0 0 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 300px;
+}
+
+.wheel-cross-section,
+.wheel-detail {
+  width: 100%;
+  height: auto;
+  max-width: 300px;
+  max-height: 300px;
+  object-fit: contain;
+  background: transparent  0% 0% no-repeat padding-box;
+  opacity: 1;
+}
+
+.content-text {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  min-width: 0;
+}
+
+.content-subtitle {
+  font-family: 'TT Norms Pro', sans-serif;
+  font-size: 0.9rem;
+  font-weight: normal;
+  color: #CB152F;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 0.5rem;
+}
+
+.content-title {
+  font-family: 'TT Norms Pro', sans-serif;
+  font-size: 2rem;
+  font-weight: bold;
+  color: #ffffff;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 1.5rem;
+}
+
+.content-paragraph {
+  font-family: 'TT Norms Pro', sans-serif;
+  font-size: 1rem;
+  color: #cccccc;
+  line-height: 1.5;
+  margin-bottom: 1rem;
+  text-align: left;
+}
+
+.content-paragraph:last-child {
+  margin-bottom: 0;
+}
+
+/* CTA Button */
+.cta-section {
+  text-align: center;
+  margin-top: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cta-button {
+  background-color: #000000;
+  color: #ffffff;
+  font-family: 'TT Norms Pro', sans-serif;
+  font-weight: bold;
+  text-transform: uppercase;
+  border: 2px solid #EEEEF0;
+  border-radius: 28px;
+  width: 441px;
+  height: 52px;
+  font-size: 1rem;
+  letter-spacing: 1px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  opacity: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cta-button:hover {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+/* Responsive Design */
+@media (min-width: 1600px) {
+  .feature-card {
+    padding: 0.75rem 1.25rem;
+    max-width: 450px;
+  }
+}
+
+@media (max-width: 1600px) and (min-width: 1200px) {
+  .feature-card {
+    width: 100%;
+    max-width: 350px;
+    height: auto;
+    min-height: 354px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .feature-card {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    min-height: 320px;
+    padding: 0.75rem;
+  }
+  
+  .card-title {
+    font-size: 20px;
+    line-height: 26px;
+    letter-spacing: 2.4px;
+  }
+  
+  .card-description {
+    font-size: 14px;
+    line-height: 20px;
+  }
+  
+  .card-line {
+    max-width: 250px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .feature-cards {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+    justify-items: center;
+  }
+  
+  .feature-card {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    min-height: 320px;
+  }
+  
+  .bottom-content {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+  
+  .unlimited-section {
+    height: auto;
+    min-height: 1413px;
+  }
+}
+
+@media (max-width: 768px) {
+  .unlimited-container {
+    padding: 0 1rem;
+  }
+  
+  .unlimited-title {
+    font-size: 2rem;
+  }
+  
+  .unlimited-subtitle {
+    font-size: 1rem;
+  }
+  
+  .content-title {
+    font-size: 1.5rem;
+  }
+  
+  .feature-card {
+    padding: 1.5rem;
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    min-height: 280px;
+  }
+  
+  .card-line {
+    width: 100%;
+    max-width: 400px;
+  }
+  
+  .bottom-content {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    padding: 0 1rem;
+  }
+  
+  .content-left, .content-right {
+    flex-direction: column;
+    text-align: center;
+    gap: 1rem;
+  }
+  
+  .content-image {
+    flex: 0 0 auto;
+    max-width: 250px;
+    margin: 0 auto;
+  }
+  
+  .wheel-cross-section, .wheel-detail {
+    max-width: 250px;
+    max-height: 250px;
+  }
+}
+
+@media (max-width: 480px) {
+  .unlimited-title {
+    font-size: 1.5rem;
+  }
+  
+  .content-title {
+    font-size: 1.2rem;
+  }
+  
+  .cta-button {
+    padding: 0.8rem 1.5rem;
+    font-size: 0.9rem;
+  }
+}

@@ -1,0 +1,205 @@
+/* Support & Contact Section */
+.support-section {
+  background: transparent linear-gradient(105deg, #FF0024 0%, #2B2B30 100%) 0% 0% no-repeat padding-box;
+  padding: 4rem 0;
+  font-family: 'TT Norms Pro', sans-serif;
+}
+
+.support-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.support-title {
+  color: white;
+  font-size: 2rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin: 0 0 3rem 0;
+  text-align: left;
+}
+
+.support-cards {
+  display: grid;
+  grid-template-columns: repeat(3, 428px);
+  gap: 2rem;
+  align-items: stretch;
+  justify-content: center;
+}
+
+.support-card {
+  background-color: white;
+  border-radius: 12px;
+  padding: 2rem;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+  width: 428px;
+  height: auto;
+  min-height: 31px;
+}
+
+.support-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
+}
+
+.support-card-content {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+}
+
+.support-item {
+  display: flex;
+  align-items: flex-start;
+  width: 100%;
+}
+
+.support-icon-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.25rem;
+  flex-shrink: 0;
+  width: 100%;
+}
+
+.support-header {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.support-icon {
+  width: 24px;
+  height: 24px;
+  color: #2B2B30;
+  opacity: 1;
+  flex-shrink: 0;
+  margin-top: 0;
+}
+
+.support-label {
+  color: #2B2B30;
+  text-align: left;
+  font: normal normal bold 24px/60px TT Norms Pro;
+  letter-spacing: 1.44px;
+  text-transform: uppercase;
+  opacity: 1;
+  margin: 0;
+}
+
+.support-detail {
+  color: #666666;
+  font-size: 0.875rem;
+  margin: 0;
+  line-height: 1.4;
+}
+
+/* Responsive Design */
+@media (max-width: 1400px) {
+  .support-cards {
+    grid-template-columns: repeat(2, 428px);
+    gap: 1.5rem;
+  }
+}
+
+@media (max-width: 1024px) {
+  .support-cards {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+  }
+  
+  .support-title {
+    font-size: 1.75rem;
+    margin-bottom: 2.5rem;
+  }
+  
+  .support-card {
+    padding: 1.5rem;
+    width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .support-section {
+    padding: 3rem 0;
+  }
+  
+  .support-container {
+    padding: 0 1.5rem;
+  }
+  
+  .support-cards {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+  
+  .support-title {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+    text-align: center;
+  }
+  
+  .support-card {
+    padding: 1.5rem;
+    width: 100%;
+  }
+  
+  .support-card-content {
+    flex-direction: column;
+    text-align: center;
+    gap: 0.75rem;
+  }
+  
+  .support-item {
+    flex-direction: column;
+    text-align: center;
+    gap: 0.75rem;
+  }
+  
+  .support-icon-container {
+    align-items: center;
+  }
+  
+  .support-header {
+    justify-content: center;
+  }
+  
+  .support-icon {
+    width: 24px;
+    height: 24px;
+    margin-top: 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .support-section {
+    padding: 2rem 0;
+  }
+  
+  .support-container {
+    padding: 0 1rem;
+  }
+  
+  .support-title {
+    font-size: 1.25rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .support-card {
+    padding: 1.25rem;
+    width: 100%;
+  }
+  
+  .support-label {
+    font-size: 0.8rem;
+  }
+  
+  .support-detail {
+    font-size: 0.75rem;
+  }
+}

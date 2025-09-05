@@ -1,0 +1,55 @@
+/* Custom font family for TT Norms Pro */
+.font-tt-norms {
+  font-family: 'TT Norms Pro', sans-serif;
+}
+
+/* Navigation link hover effects */
+nav a::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: -4px;
+  left: 0;
+  background-color: #DB0000;
+  transition: width 0.3s ease;
+}
+
+nav a:hover::after {
+  width: 100%;
+}
+
+nav a.active {
+  color: #DB0000;
+}
+
+nav a.active::after {
+  width: 100%;
+}
+
+/* Responsive adjustments for smaller screens */
+@media (max-width: 1280px) {
+  /* Hide navigation menu on smaller screens */
+  .nav-menu {
+    display: none;
+  }
+  
+  /* Adjust button sizes for smaller screens */
+  .btn-responsive {
+    padding: 0.25rem 0.5rem;
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 768px) {
+  /* Further adjustments for mobile */
+  .btn-mobile {
+    padding: 0.25rem 0.4rem;
+    font-size: 10px;
+  }
+  
+  .language-mobile {
+    width: 60px;
+    height: 20px;
+  }
+}

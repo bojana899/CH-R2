@@ -1,0 +1,35 @@
+<section class="wheels-section">
+  <div class="wheels-container">
+    
+
+    <div class="wheels-content">
+      <div *ngFor="let category of getCategories()" class="category-section">
+        <h3 class="category-title">{{ category | translate }}</h3>
+        <div class="wheels-grid" [class.performance-design-grid]="category === 'wheels.performanceDesign'">
+          <div *ngFor="let wheel of getWheelsByCategory(category); let i = index" 
+               class="wheel-card" 
+               [class.performance-card]="category === 'wheels.performanceDesign'">
+            <div class="wheel-image-container" 
+                 [class.performance-image-container]="category === 'wheels.performanceDesign'">
+              <img [src]="getSelectedImage(wheel.id)" [alt]="wheel.name" class="wheel-image">
+              <div class="gradient-line"></div>
+            </div>
+            <div class="wheel-info" 
+                 [class.performance-info]="category === 'wheels.performanceDesign'">
+              <h4 class="wheel-name">{{ wheel.name }}</h4>
+              <div class="color-options">
+                <div *ngFor="let color of wheel.colors" 
+                     class="color-selector" 
+                     [title]="color.name"
+                     (click)="selectWheelColor(wheel.id, color.image)">
+                  <img [src]="color.image" [alt]="color.name" class="selector-image">
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

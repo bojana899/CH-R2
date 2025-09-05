@@ -1,0 +1,120 @@
+.actions-section {
+  position: relative;
+  width: 100%;
+  height: 408px;
+  background-image: url('../../../../assets/Startseite/aktion.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.actions-section::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #000000;
+  opacity: 0.72;
+  z-index: 1;
+}
+
+.actions-container {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  max-width: 1920px;
+  height: 100%;
+}
+
+.actions-content {
+  position: absolute;
+  bottom: 52px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 3;
+}
+
+.actions-text {
+  text-align: center;
+}
+
+/* Button styling to match BBS design */
+.cta-button {
+  background-color: #CB152F;
+  color: #FFFFFF;
+  font-family: 'TT Norms Pro', sans-serif;
+  font-weight: 600;
+  text-transform: uppercase;
+  border: none;
+  border-radius: 28px;
+  width: 350px;
+  height: 52px;
+  font-size: 16px;
+  line-height: 22px;
+  letter-spacing: 0.51px;
+  transition: background-color 0.3s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  opacity: 1;
+  text-align: left;
+}
+
+.cta-button:hover {
+  background-color: #B80000;
+  text-decoration: none;
+  color: white;
+}
+
+
+
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .actions-section {
+    height: 390px;
+  }
+  
+  .actions-content {
+    bottom: 52px;
+  }
+  
+  .cta-button {
+    width: 327px;
+    height: 55px;
+    font-size: 14px;
+    line-height: 20px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .actions-section {
+    height: 390px;
+  }
+  
+  .actions-content {
+    bottom: 52px;
+  }
+  
+  .cta-button {
+    width: 281px;
+    height: 55px;
+    font-size: 12px;
+    line-height: 18px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}

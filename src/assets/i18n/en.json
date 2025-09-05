@@ -1,0 +1,161 @@
+{
+  "heroCarousel": {
+    "slides": {
+      "chrII": {
+        "title": "CH-R II",
+        "buttonText": "ORDER THE CH-R II NOW"
+      },
+      "action": {
+        "title": "Action",
+        "buttonText": "SHOP NOW"
+      },
+      "design": {
+        "title": "Design",
+        "buttonText": "EXPLORE DESIGNS"
+      }
+    }
+  },
+  "header": {
+    "menu": {
+      "wheels": "WHEELS",
+      "technology": "TECHNOLOGY",
+      "gallery": "GALLERY",
+      "company": "COMPANY",
+      "contact": "CONTACT"
+    },
+    "buttons": {
+      "shop": "SHOP",
+      "dealerSearch": "DEALER SEARCH",
+      "selectVehicle": "SELECT VEHICLE",
+      "account": "ACCOUNT",
+      "cart": "CART"
+    }
+  },
+  "footer": {
+    "sections": {
+      "wheels": {
+        "title": "BBS Wheels",
+        "byTechnology": "by Technology",
+        "byDesign": "by Design Lines",
+        "allWheels": "All Wheels"
+      },
+      "info": {
+        "title": "Information",
+        "technology": "Technology",
+        "shop": "Shop",
+        "configurator": "Configurator",
+        "company": "Company",
+        "news": "News"
+      },
+      "service": {
+        "title": "Customer Service",
+        "contact": "Contact",
+        "documents": "Approvals / Registration Documents",
+        "dealerSearch": "Dealer Search",
+        "payment": "Payment Methods",
+        "shipping": "Shipping Costs"
+      },
+      "legal": {
+        "title": "Legal",
+        "imprint": "Imprint",
+        "privacy": "Privacy Policy",
+        "terms": "Terms and Conditions",
+        "revocation": "Right of Revocation for Consumers"
+      },
+      "contact": {
+        "title": "Contact",
+        "address": "KW automotive GmbH.",
+        "street": "Aspachweg 14, 74427",
+        "city": "Fichtenberg, Germany",
+        "phone": "+49 (0) 7836 52-0",
+        "email": "sales.bbs@kwautomotive.de"
+      }
+    },
+    "buttons": {
+      "dealerLogin": "Dealer Login",
+      "contactUs": "Contact Us"
+    },
+    "social": {
+      "title": "Social Media"
+    },
+    "copyright": "© 2023 KW automotive GmbH. All rights reserved."
+  },
+  "wheelUnlimited": {
+    "subtitle": "DIMENSIONS. FIT & STYLE",
+    "mainTitle": "THE NEW WORLD OF WHEELS IS",
+    "unlimited": "UNLIMITED",
+    "styleOptions": "Style options",
+    "mountingSystem": "Unlimited mounting system",
+    "goUnlimited": "GO UNLIMITED",
+    "description": "BBS Unlimited enables limitless customization of wheels - from colors to details - in the highest quality.",
+    "ctaButton": "TO THE WHEEL OVERVIEW"
+  },
+  "unlimited": {
+    "title": "UNLIMITED SYSTEM",
+    "subtitle": "BBS Unlimited combines technical precision and individual design in a unique wheel system. Thanks to modular components, the wheels fit almost any vehicle and can be freely configured in terms of design, style and details.",
+    "features": {
+      "dimensions": {
+        "subtitle": "UNLIMITED",
+        "title": "DIMENSIONS",
+        "description": "Numerous wheel dimensions, wheel widths and concavities can be individually combined for front and rear axles."
+      },
+      "fit": {
+        "subtitle": "UNLIMITED",
+        "title": "FIT",
+        "description": "An unprecedented variety of applications and combinations with just a few components and flexible adjustment of the offset."
+      },
+      "style": {
+        "subtitle": "UNLIMITED",
+        "title": "STYLE",
+        "description": "Countless options for customizing the wheels. Wheel color, hub caps, rim protectors, wheel bolts and valve caps. Make a wheel your wheel."
+      }
+    },
+    "adaptability": {
+      "subtitle": "ONCE PURCHASED",
+      "title": "FOREVER ADAPTABLE",
+      "description1": "Thanks to the Unlimited mounting system, your wheel not only fits one model, but almost any vehicle with 5-hole mounting.",
+      "description2": "With interchangeable centering rings and adapter discs, you can mount your BBS Unlimited wheel set on your next vehicle."
+    },
+    "details": {
+      "subtitle": "IT'S IN THE DETAILS",
+      "title": "EXCHANGE STYLE COMPONENTS",
+      "description1": "Just like the wheel itself, you can also adapt the style components to different vehicles.",
+      "description2": "Rim protectors, hub caps, valve caps and wheel bolts can be ordered individually in different colors."
+    },
+    "ctaButton": "ALL DETAILS ABOUT THE UNLIMITED SYSTEM"
+  },
+  "actions": {
+    "ctaButton": "TO THE PRODUCTS"
+  },
+  "wheels": {
+    "performanceDesign": "PERFORMANCE DESIGN",
+    "motorsportDesign": "MOTORSPORT DESIGN",
+    "utilityDesign": "UTILITY DESIGN"
+  },
+  "designLines": {
+    "title": "THE DESIGNS"
+  },
+  "support": {
+    "title": "SUPPORT & CONTACT",
+    "email": {
+      "label": "E-MAIL",
+      "value": "sales.bbs@kwautomotive.de"
+    },
+    "phone": {
+      "label": "PHONE",
+      "value": "+49 7971 9630-0"
+    },
+    "dealer": {
+      "label": "DEALER SEARCH",
+      "value": "Go to dealer search"
+    }
+  },
+  "inspiration": {
+    "subtitle": "LOOKING FOR INSPIRATION?",
+    "title": "ALL EYES ON BBS",
+    "gallery": {
+      "alt": "BBS Wheels Gallery",
+      "viewAll": "VIEW COMPLETE WHEEL GALLERY"
+    }
+  }
+}

@@ -1,0 +1,126 @@
+<header class="fixed top-0 left-0 w-full h-[57px] bg-white z-[1000] flex items-center justify-between px-5 lg:px-10">
+  <!-- Left Section -->
+  <div class="flex items-center gap-8">
+    <!-- Logo -->
+    <a href="/" class="block">
+      <img src="assets/Startseite/Icons/logo_bbs.svg" alt="BBS Logo" class="w-[60px] h-[20px] object-contain opacity-100 lg:w-[78px] lg:h-[27px]">
+    </a>
+
+    <!-- Main Menu - Desktop -->
+    <nav class="hidden lg:flex items-center gap-6 laptop:gap-7 design:gap-8">
+      <a href="#" class="text-[#666666] text-[15px] leading-[24px] font-tt-norms font-normal uppercase tracking-[0px] opacity-100 text-left hover:text-gray-800 transition-all duration-300 relative no-underline">{{ 'header.menu.wheels' | translate }}</a>
+      <a href="https://www.bbs.com/de/unlimited-ubersicht" target="_blank" class="text-[#666666] text-[15px] leading-[24px] font-tt-norms font-normal uppercase tracking-[0px] opacity-100 text-left hover:text-gray-800 transition-all duration-300 relative no-underline">{{ 'header.menu.technology' | translate }}</a>
+      <a href="https://www.bbs.com/de/galerie" target="_blank" class="text-[#666666] text-[15px] leading-[24px] font-tt-norms font-normal uppercase tracking-[0px] opacity-100 text-left hover:text-gray-800 transition-all duration-300 relative no-underline">{{ 'header.menu.gallery' | translate }}</a>
+      <a href="https://www.bbs.com/de/unternehmen/manufaktur" target="_blank" class="text-[#666666] text-[15px] leading-[24px] font-tt-norms font-normal uppercase tracking-[0px] opacity-100 text-left hover:text-gray-800 transition-all duration-300 relative no-underline">{{ 'header.menu.company' | translate }}</a>
+      <a href="#" class="text-[#666666] text-[15px] leading-[24px] font-tt-norms font-normal uppercase tracking-[0px] opacity-100 text-left hover:text-gray-800 transition-all duration-300 relative no-underline">{{ 'header.menu.contact' | translate }}</a>
+    </nav>
+  </div>
+
+  <!-- Right Section -->
+  <div class="hidden lg:flex items-center gap-4">
+    <!-- Action Buttons -->
+    <a href="https://store.kwautomotive.de/de/shop" target="_blank" class="bg-[#DB0000] text-white text-[13px] laptop:text-[14px] design:text-[15px] leading-[20px] laptop:leading-[22px] design:leading-[24px] font-tt-norms font-normal uppercase w-[60px] laptop:w-[63px] design:w-[66px] h-[28px] laptop:h-[29px] design:h-[31px] flex items-center justify-center hover:bg-[#B80000] transition-colors duration-300 no-underline">{{ 'header.buttons.shop' | translate }}</a>
+    <a href="https://www.bbs.com/de/haendlersuche" target="_blank" class="bg-black text-white text-[13px] laptop:text-[14px] design:text-[15px] leading-[20px] laptop:leading-[22px] design:leading-[24px] font-tt-norms font-normal uppercase w-[130px] laptop:w-[140px] design:w-[150px] h-[28px] laptop:h-[29px] design:h-[31px] flex items-center justify-center hover:bg-gray-800 transition-colors duration-300 no-underline">{{ 'header.buttons.dealerSearch' | translate }}</a>
+      
+    <!-- Vehicle Selector -->
+    <div class="flex items-center gap-2">
+      <img src="assets/Startseite/Icons/car.svg" alt="Vehicle" class="w-[24px] h-[24px]">
+      <span class="text-[13px] laptop:text-[14px] design:text-[15px] leading-[20px] laptop:leading-[22px] design:leading-[24px] font-tt-norms font-normal">{{ 'header.buttons.selectVehicle' | translate }}</span>
+    </div>
+
+    <!-- Icons -->
+    <div class="flex items-center gap-4">
+      <button class="hover:opacity-80 transition-opacity duration-300">
+        <img src="assets/Startseite/Icons/search.svg" alt="Search" class="w-5 h-5">
+      </button>
+      <button class="hover:opacity-80 transition-opacity duration-300">
+        <img src="assets/Startseite/Icons/user.svg" alt="User" class="w-5 h-5">
+      </button>
+      <button class="hover:opacity-80 transition-opacity duration-300">
+        <img src="assets/Startseite/Icons/cart.svg" alt="Cart" class="w-5 h-5">
+      </button>
+    </div>
+
+    <!-- Language Selector -->
+    <div class="relative cursor-pointer language-selector" (click)="toggleLanguageDropdown($event)">
+      <div class="flex items-center gap-1 px-2 py-1 border border-[#C5C5C5] bg-white rounded-sm w-[70px] laptop:w-[72px] design:w-[75px] h-[22px] laptop:h-[22px] design:h-[23px] box-border">
+        <span class="text-black text-[11px] laptop:text-[11px] design:text-[12px] leading-[14px] laptop:leading-[15px] design:leading-[16px] font-tt-norms font-normal uppercase">{{ currentLanguage }}</span>
+        <div class="w-px h-2 laptop:h-2 design:h-3 bg-black"></div>
+        <img [src]="getFlagPath(currentLanguage)" [alt]="currentLanguage + ' flag'" class="w-3 h-2 laptop:w-3 laptop:h-2 design:w-4 design:h-3 object-cover">
+        <span class="text-black text-[11px] laptop:text-[11px] design:text-[12px] leading-[14px] laptop:leading-[15px] design:leading-[16px] font-tt-norms font-normal uppercase">{{ currentLanguage }}</span>
+      </div>
+      <div *ngIf="showLanguageDropdown" class="absolute top-full right-0 bg-white border border-[#C5C5C5] rounded-sm min-w-[55px] laptop:min-w-[57px] design:min-w-[60px] z-[1001] flex-col shadow-lg">
+        <button class="w-full px-3 py-2 text-black text-[11px] laptop:text-[11px] design:text-[12px] leading-[14px] laptop:leading-[15px] design:leading-[16px] font-tt-norms font-normal uppercase text-center hover:bg-gray-100" (click)="selectLanguage('EN', $event)">EN</button>
+        <button class="w-full px-3 py-2 text-black text-[11px] laptop:text-[11px] design:text-[12px] leading-[14px] laptop:leading-[15px] design:leading-[16px] font-tt-norms font-normal uppercase text-center hover:bg-gray-100 border-t border-gray-200" (click)="selectLanguage('DE', $event)">DE</button>
+      </div>
+    </div>
+    </div>
+
+
+  <!-- Mobile Menu Button -->
+  <div class="flex items-center gap-4 lg:hidden">
+    <button class="hover:opacity-80 transition-opacity duration-300">
+      <img src="assets/Startseite/Icons/search.svg" alt="Search" class="w-5 h-5">
+    </button>
+    <button class="p-2" (click)="toggleMobileMenu($event)">
+      <svg class="w-6 h-6 text-black" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+      </svg>
+    </button>
+  </div>
+</header>
+
+<!-- Mobile Menu Overlay -->
+<div class="fixed inset-0 bg-black bg-opacity-50 z-[999] lg:hidden" [class.hidden]="!showMobileMenu" (click)="toggleMobileMenu($event)"></div>
+
+<!-- Mobile Menu -->
+<div class="fixed top-[57px] left-0 w-full bg-white z-[1000] lg:hidden transform transition-transform duration-300 max-h-[calc(100vh-57px)] overflow-y-auto" [class.translate-x-0]="showMobileMenu" [class.-translate-x-full]="!showMobileMenu">
+  <nav class="flex flex-col p-6">
+    <!-- Vehicle Selector -->
+    <div class="flex items-center gap-2 mb-6">
+      <img src="assets/Startseite/Icons/car.svg" alt="Vehicle" class="w-[24px] h-[24px]">
+      <span class="text-[15px] leading-[24px] font-tt-norms font-normal">{{ 'header.buttons.selectVehicle' | translate }}</span>
+    </div>
+
+    <!-- Navigation Links -->
+    <div class="flex flex-col space-y-4 mb-6">
+      <a href="#" class="text-[#666666] text-[15px] leading-[24px] font-tt-norms font-normal uppercase tracking-[0px] opacity-100 text-left hover:text-gray-800 transition-all duration-300">{{ 'header.menu.wheels' | translate }}</a>
+      <a href="https://www.bbs.com/de/unlimited-ubersicht" target="_blank" class="text-[#666666] text-[15px] leading-[24px] font-tt-norms font-normal uppercase tracking-[0px] opacity-100 text-left hover:text-gray-800 transition-all duration-300">{{ 'header.menu.technology' | translate }}</a>
+      <a href="https://www.bbs.com/de/galerie" target="_blank" class="text-[#666666] text-[15px] leading-[24px] font-tt-norms font-normal uppercase tracking-[0px] opacity-100 text-left hover:text-gray-800 transition-all duration-300">{{ 'header.menu.gallery' | translate }}</a>
+      <a href="https://www.bbs.com/de/unternehmen/manufaktur" target="_blank" class="text-[#666666] text-[15px] leading-[24px] font-tt-norms font-normal uppercase tracking-[0px] opacity-100 text-left hover:text-gray-800 transition-all duration-300">{{ 'header.menu.company' | translate }}</a>
+      <a href="#" class="text-[#666666] text-[15px] leading-[24px] font-tt-norms font-normal uppercase tracking-[0px] opacity-100 text-left hover:text-gray-800 transition-all duration-300">{{ 'header.menu.contact' | translate }}</a>
+    </div>
+    
+    <!-- Action Buttons -->
+    <div class="flex flex-col space-y-3 mb-6">
+      <a href="https://store.kwautomotive.de/de/shop" target="_blank" class="bg-[#DB0000] text-white text-[15px] leading-[24px] font-tt-norms font-normal uppercase py-3 px-4 text-center hover:bg-[#B80000] transition-colors duration-300 rounded no-underline">{{ 'header.buttons.shop' | translate }}</a>
+      <a href="https://www.bbs.com/de/haendlersuche" target="_blank" class="bg-black text-white text-[15px] leading-[24px] font-tt-norms font-normal uppercase py-3 px-4 text-center hover:bg-gray-800 transition-colors duration-300 rounded no-underline">{{ 'header.buttons.dealerSearch' | translate }}</a>
+    </div>
+
+    <!-- User Actions -->
+    <div class="flex flex-col space-y-4 py-6 border-t border-gray-200">
+      <a href="#" class="flex items-center gap-3 text-gray-600 hover:text-gray-800 transition-colors duration-300">
+        <img src="assets/Startseite/Icons/user.svg" alt="User" class="w-5 h-5">
+        <span class="text-[13px] leading-[16px] font-tt-norms font-medium uppercase">{{ 'header.buttons.account' | translate }}</span>
+      </a>
+      <a href="#" class="flex items-center gap-3 text-gray-600 hover:text-gray-800 transition-colors duration-300">
+        <img src="assets/Startseite/Icons/cart.svg" alt="Cart" class="w-5 h-5">
+        <span class="text-[13px] leading-[16px] font-tt-norms font-medium uppercase">{{ 'header.buttons.cart' | translate }}</span>
+      </a>
+    </div>
+
+    <!-- Language Selector -->
+    <div class="pt-4 border-t border-gray-200">
+      <div class="flex items-center gap-1 px-2 py-1 border border-[#C5C5C5] bg-white rounded-sm w-[70px] h-[22px] box-border">
+        <span class="text-black text-[11px] leading-[14px] font-tt-norms font-normal uppercase">{{ currentLanguage }}</span>
+        <div class="w-px h-2 bg-black"></div>
+        <img [src]="getFlagPath(currentLanguage)" [alt]="currentLanguage + ' flag'" class="w-3 h-2 object-cover">
+        <span class="text-black text-[11px] leading-[14px] font-tt-norms font-normal uppercase">{{ currentLanguage }}</span>
+      </div>
+      <div class="flex flex-col mt-2">
+        <button class="w-full px-3 py-2 text-black text-[11px] leading-[14px] font-tt-norms font-normal uppercase text-center hover:bg-gray-100" (click)="selectLanguage('EN', $event)">EN</button>
+        <button class="w-full px-3 py-2 text-black text-[11px] leading-[14px] font-tt-norms font-normal uppercase text-center hover:bg-gray-100 border-t border-gray-200" (click)="selectLanguage('DE', $event)">DE</button>
+      </div>
+    </div>
+  </nav>
+</div>

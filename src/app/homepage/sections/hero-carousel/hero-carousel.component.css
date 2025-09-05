@@ -1,0 +1,148 @@
+:host {
+  display: block;
+  min-height: 100vh;
+  background-color: #FFFFFF;
+}
+
+/* Video styling */
+video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  background-color: #000;
+}
+
+/* Ensure video autoplay works */
+video::-webkit-media-controls {
+  display: none !important;
+}
+
+video::-webkit-media-controls-enclosure {
+  display: none !important;
+}
+
+video::-webkit-media-controls-panel {
+  display: none !important;
+}
+
+/* Fallback image styling */
+.fallback-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  z-index: 0;
+}
+
+/* Button styling to match BBS design */
+.cta-button {
+  background-color: #CB152F;
+  color: white;
+  font-family: 'TT Norms Pro', sans-serif;
+  font-weight: bold;
+  text-transform: uppercase;
+  border: none;
+  border-radius: 28px;
+  width: 275px;
+  height: 52px;
+  font-size: 14px;
+  letter-spacing: 0.5px;
+  transition: background-color 0.3s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  opacity: 1;
+}
+
+.cta-button:hover {
+  background-color: #B80000;
+  text-decoration: none;
+  color: white;
+}
+
+/* Mobile/Tablet Layout */
+@media (max-width: 1023px) {
+  /* Make carousel 60vh + 10vh white space for navigation */
+  .min-h-screen {
+    min-height: 70vh; /* 60vh carousel + 10vh white space */
+    height: 70vh;
+  }
+  
+  .h-screen {
+    height: 70vh; /* Only the video part */
+  }
+  
+  .carousel-container {
+    position: relative;
+    height: 80vh; /* Only the video part */
+  }
+  
+  /* Add white space for navigation */
+  .min-h-screen::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 1h; /* White space for navigation */
+    background-color: white;
+    z-index: 10;
+  }
+  
+  /* Position mobile navigation in the white space - center in 10vh */
+  .mobile-nav {
+    position: absolute;
+    bottom: 10vh; /* Position in the white space */
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 20;
+  }
+  
+  /* Keep button in original position */
+  .absolute.inset-0.flex.flex-col.justify-end {
+    padding-bottom: 2rem; /* Keep original button position */
+  }
+  
+  /* Ensure mobile button stays in carousel area */
+  .mobile-button {
+    position: absolute;
+    bottom: 4rem;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 15;
+  }
+  
+  /* Style navigation for white background */
+  .mobile-nav .w-8 {
+    border-color: #333 !important;
+    color: #333 !important;
+  }
+  
+  .mobile-nav .w-8:hover {
+    background-color: #333 !important;
+    color: white !important;
+  }
+  
+  /* Style the dots for white background */
+  .mobile-nav .w-6.h-1 {
+    background-color: #333 !important;
+  }
+  
+  .mobile-nav .w-6.h-1.bg-white {
+    background-color: #333 !important;
+  }
+  
+  .mobile-nav .w-6.h-1.bg-gray-400 {
+    background-color: #999 !important;
+  }
+}

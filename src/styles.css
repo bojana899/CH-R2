@@ -1,0 +1,12 @@
+/* You can add global styles to this file, and also import other style files */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* TT Norms Pro Font */
+@font-face {
+  font-family: 'TT Norms Pro';
+  src: url('/assets/fonts/TTNormsPro-DemiBold.ttf') format('truetype');
+  font-weight: 600;
+  font-style: normal;
+}

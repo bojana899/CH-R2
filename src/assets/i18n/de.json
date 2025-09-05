@@ -1,0 +1,161 @@
+{
+  "heroCarousel": {
+    "slides": {
+      "chrII": {
+        "title": "CH-R II",
+        "buttonText": "CH-R II JETZT BESTELLEN"
+      },
+      "action": {
+        "title": "Aktion",
+        "buttonText": "JETZT EINKAUFEN"
+      },
+      "design": {
+        "title": "Design",
+        "buttonText": "DESIGNS ENTDECKEN"
+      }
+    }
+  },
+  "header": {
+    "menu": {
+      "wheels": "RÄDER",
+      "technology": "TECHNOLOGIE",
+      "gallery": "GALERIE",
+      "company": "UNTERNEHMEN",
+      "contact": "KONTAKT"
+    },
+    "buttons": {
+      "shop": "SHOP",
+      "dealerSearch": "HÄNDLERSUCHE",
+      "selectVehicle": "FAHRZEUG WÄHLEN",
+      "account": "KONTO",
+      "cart": "WARENKORB"
+    }
+  },
+  "footer": {
+    "sections": {
+      "wheels": {
+        "title": "BBS Räder",
+        "byTechnology": "nach Technologie",
+        "byDesign": "nach Designlinien",
+        "allWheels": "Alle Räder"
+      },
+      "info": {
+        "title": "Information",
+        "technology": "Technologie",
+        "shop": "Shop",
+        "configurator": "Konfigurator",
+        "company": "Unternehmen",
+        "news": "News"
+      },
+      "service": {
+        "title": "Kundenservice",
+        "contact": "Kontakt",
+        "documents": "Gutachten / Zulassungsdokumente",
+        "dealerSearch": "Händlersuche",
+        "payment": "Zahlungsmethoden",
+        "shipping": "Versandkosten"
+      },
+      "legal": {
+        "title": "Rechtliches",
+        "imprint": "Impressum",
+        "privacy": "Datenschutzerklärung",
+        "terms": "Allgemeine Geschäftsbedingungen",
+        "revocation": "Widerrufsrecht für Verbraucher"
+      },
+      "contact": {
+        "title": "Kontakt",
+        "address": "KW automotive GmbH.",
+        "street": "Aspachweg 14, 74427",
+        "city": "Fichtenberg, Germany",
+        "phone": "+49 (0) 7836 52-0",
+        "email": "sales.bbs@kwautomotive.de"
+      }
+    },
+    "buttons": {
+      "dealerLogin": "Händler Login",
+      "contactUs": "Kontaktiere uns"
+    },
+    "social": {
+      "title": "Social Media"
+    },
+    "copyright": "© 2023 KW automotive GmbH. Alle Rechte vorbehalten."
+  },
+  "wheelUnlimited": {
+    "subtitle": "DIMENSIONEN. PASSFORM & STIL",
+    "mainTitle": "DIE NEUE WELT DER RÄDER IST",
+    "unlimited": "UNLIMITED",
+    "styleOptions": "Style-Optionen",
+    "mountingSystem": "Unlimited Montagesystem",
+    "goUnlimited": "GO UNLIMITED",
+    "description": "BBS Unlimited ermöglicht grenzenlose Anpassung von Rädern - von Farben bis zu Details - in höchster Qualität.",
+    "ctaButton": "ZUR RÄDER-ÜBERSICHT"
+  },
+  "unlimited": {
+    "title": "UNLIMITED SYSTEM",
+    "subtitle": "BBS Unlimited verbindet technische Präzision und individuelles Design in einem einzigartigen Radsystem. Dank modularer Komponenten passen die Räder zu fast jedem Fahrzeug und können frei konfiguriert werden in Bezug auf Design, Stil und Details.",
+    "features": {
+      "dimensions": {
+        "subtitle": "UNLIMITED",
+        "title": "DIMENSIONEN",
+        "description": "Zahlreiche Raddimensionen, Radbreiten und Konkavitäten können individuell für Vorder- und Hinterachse kombiniert werden."
+      },
+      "fit": {
+        "subtitle": "UNLIMITED",
+        "title": "PASSFORM",
+        "description": "Eine beispiellose Vielfalt an Anwendungen und Kombinationen mit nur wenigen Komponenten und flexibler Anpassung der Einpresstiefe."
+      },
+      "style": {
+        "subtitle": "UNLIMITED",
+        "title": "STIL",
+        "description": "Unzählige Optionen zur Individualisierung der Räder. Radfarbe, Nabendeckel, Anfahrschutzringe, Radbolzen und Ventilkappen. Machen Sie ein Rad zu Ihrem Rad."
+      }
+    },
+    "adaptability": {
+      "subtitle": "EINMAL GEKAUFT",
+      "title": "FÜR IMMER ANPASSBAR",
+      "description1": "Dank des Unlimited Montagesystems passt Ihr Rad nicht nur zu einem Modell, sondern zu fast jedem Fahrzeug mit 5-Loch-Befestigung.",
+      "description2": "Mit austauschbaren Zentrierringen und Adapterscheiben können Sie Ihr BBS Unlimited Radsatz an Ihrem nächsten Fahrzeug montieren."
+    },
+    "details": {
+      "subtitle": "ES LIEGT IN DEN DETAILS",
+      "title": "STILKOMPONENTEN AUSTAUSCHEN",
+      "description1": "Genau wie das Rad selbst können Sie auch die Stilkomponenten an verschiedene Fahrzeuge anpassen.",
+      "description2": "Anfahrschutzringe, Nabendeckel, Ventilkappen und Radbolzen können einzeln in verschiedenen Farben bestellt werden."
+    },
+    "ctaButton": "ALLE DETAILS ZUM UNLIMITED SYSTEM"
+  },
+  "actions": {
+    "ctaButton": "ZU DEN PRODUKTEN"
+  },
+  "wheels": {
+    "performanceDesign": "PERFORMANCE DESIGN",
+    "motorsportDesign": "MOTORSPORT DESIGN",
+    "utilityDesign": "UTILITY DESIGN"
+  },
+  "designLines": {
+    "title": "THE DESIGNS"
+  },
+  "support": {
+    "title": "SUPPORT & KONTAKT",
+    "email": {
+      "label": "E-MAIL",
+      "value": "sales.bbs@kwautomotive.de"
+    },
+    "phone": {
+      "label": "TELEFON",
+      "value": "+49 7971 9630-0"
+    },
+    "dealer": {
+      "label": "HÄNDLERSUCHE",
+      "value": "Zur Händlersuche"
+    }
+  },
+  "inspiration": {
+    "subtitle": "LUST AUF INSPIRATION?",
+    "title": "ALLE BLICKE AUF BBS",
+    "gallery": {
+      "alt": "BBS Räder Galerie",
+      "viewAll": "VOLLSTÄNDIGE RADGALERIE ANSEHEN"
+    }
+  }
+}

@@ -1,0 +1,508 @@
+:host {
+  display: block;
+  width: 100%;
+  background-color: #FFFFFF;
+  opacity: 1;
+}
+
+.wheel-unlimited-section {
+  width: 100%;
+  background: #FFFFFF;
+  padding: 4rem 0;
+}
+
+.wheel-unlimited-container {
+  display: flex;
+  flex-direction: column;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+  gap: 0;
+  position: relative;
+}
+
+/* Left Content Area */
+.left-content {
+  flex: 1;
+  padding-right: 2rem;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+/* Header Section */
+.header-section {
+  display: flex;
+  align-items: flex-start;
+  gap: 1.5rem;
+  margin-bottom: 3rem;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.header-icon {
+  flex-shrink: 0;
+  margin-top: 0.5rem;
+}
+
+.globe-icon {
+  width: 99px;
+  height: 150px;
+  opacity: 0.3;
+  filter: grayscale(100%) brightness(0.3);
+}
+
+.header-text {
+  flex: 1;
+}
+
+.subtitle {
+  font-family: 'TT Norms Pro', sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  color: #CB152F;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 0.5rem;
+}
+
+.main-title {
+  font-family: 'TT Norms Pro', sans-serif;
+  font-size: 46px;
+  font-weight: 500;
+  color: #333333;
+  line-height: 60px;
+  letter-spacing: 5.52px;
+  text-align: left;
+  text-transform: uppercase;
+  opacity: 1;
+  margin: 0;
+}
+
+.unlimited-red {
+  color: #CB152F;
+}
+
+/* Cards Container */
+.cards-container {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 3rem;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  flex-wrap: nowrap;
+}
+
+/* Wheels Display */
+.wheels-display {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  margin-bottom: 3rem;
+}
+
+.wheel-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: 398px;
+  height: 498px;
+  background: #FFFFFF;
+  border-radius: 8px;
+  padding: 1rem;
+  box-sizing: border-box;
+  flex-shrink: 0;
+  justify-content: space-between;
+}
+
+.wheel-image {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.gradient-line {
+  top: 2rem;
+  width: 180px;
+  height: 1px;
+  background: linear-gradient(90deg, rgba(236, 236, 236, 0) 0%, #ABABAB 51%, rgba(236, 236, 236, 0) 100%);
+  opacity: 1;
+  margin-top: 0.5rem;
+}
+
+.wheel-img {
+  width: 358px;
+  height: 271px;
+  object-fit: contain;
+  transform: rotate(-15deg);
+  transition: transform 0.3s ease;
+}
+
+.wheel-img:hover {
+  transform: rotate(-15deg) scale(1.05);
+}
+
+.wheel-info {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  height: 100%;
+  position: relative;
+}
+
+.wheel-name {
+  position: absolute;
+  top:4rem;
+  left: 0;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 0.5rem;
+  z-index: 2;
+}
+
+.model-name {
+
+  height: 62px;
+  text-align: left;
+  font-family: 'TT Norms Pro', sans-serif;
+  font-size: 38px;
+  font-weight: 500;
+  line-height: 60px;
+  letter-spacing: 2.88px;
+  color: #333333;
+  text-transform: uppercase;
+  opacity: 1;
+}
+
+.bbs-badge {
+  background: #CB152F;
+  color: #FFFFFF;
+  font-family: 'TT Norms Pro', sans-serif;
+  font-size: 12px;
+  font-weight: 600;
+  padding: 0.25rem 0.5rem;
+  border-radius: 3px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.wheel-features {
+  width: 358px;
+  height: 80px;
+  background: #D9D9DE 0% 0% no-repeat padding-box;
+  border-radius: 4px;
+  opacity: 1;
+  padding: 0.75rem;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+.feature-item {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 0.25rem;
+  font-family: 'TT Norms Pro', sans-serif;
+  font-size: 12px;
+  color: #2B2B30;
+  line-height: 1.2;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.feature-item:last-child {
+  margin-bottom: 0;
+}
+
+.feature-icon {
+  width: 14px;
+  height: 14px;
+  opacity: 0.7;
+  flex-shrink: 0;
+}
+
+/* CTA Button */
+.cta-section {
+  position: absolute;
+  bottom: -2rem;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 0 2rem;
+  z-index: 10;
+}
+
+.cta-button {
+  background: transparent;
+  border: 2px solid #CB152F;
+  color: #CB152F;
+  font-family: 'TT Norms Pro', sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  width: 288px;
+  height: 52px;
+  border-radius: 28px;
+  opacity: 1;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+
+.cta-button:hover {
+  background: #CB152F;
+  color: #FFFFFF;
+}
+
+/* Right Promotional Panel */
+.right-panel {
+  width: 398px;
+  height: 498px;
+  background: #2B2B30 0% 0% no-repeat padding-box;
+  border-radius: 8px;
+  opacity: 1;
+  position: relative;
+  overflow: hidden;
+  flex-shrink: 0;
+  box-sizing: border-box;
+}
+
+.panel-content {
+  padding: 3rem 2rem;
+  position: relative;
+  z-index: 2;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.bbs-logo {
+  margin-bottom: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo-img {
+  width: 91px;
+  height: 34px;
+  opacity: 1;
+  filter: brightness(0) invert(1);
+}
+
+.panel-title {
+  font-family: 'TT Norms Pro', sans-serif;
+  font-size: 36px;
+  font-weight: 700;
+  color: #FFFFFF;
+  text-transform: uppercase;
+  margin-bottom: 1.5rem;
+  line-height: 1.2;
+  text-align: center;
+}
+
+.panel-description {
+  font-family: 'TT Norms Pro', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  color: #B8B9C1;
+  line-height: 1.6;
+  margin: 0;
+  text-align: center;
+}
+
+.panel-background {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.3;
+  z-index: 1;
+}
+
+.background-pattern {
+  width: 80%;
+  height: 80%;
+  object-fit: contain;
+  object-position: center bottom;
+  filter: grayscale(100%) brightness(4);
+  margin: auto;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+/* Responsive Design */
+@media (max-width: 1600px) and (min-width: 1400px) {
+  .cards-container {
+    gap: 0.25rem !important;
+    max-width: 1000px !important;
+  }
+  
+  .wheel-card {
+    width: 240px !important;
+    height: 380px !important;
+  }
+  
+  .right-panel {
+    width: 240px !important;
+    height: 380px !important;
+  }
+  
+  .wheel-img {
+    width: 200px !important;
+    height: 150px !important;
+  }
+  
+  .wheel-features {
+    width: 200px !important;
+    height: 50px !important;
+  }
+}
+
+@media (max-width: 1500px) {
+  .cards-container {
+    gap: 0.25rem !important;
+    max-width: 1000px !important;
+  }
+  
+  .wheel-card {
+    width: 240px !important;
+    height: 380px !important;
+  }
+  
+  .right-panel {
+    width: 240px !important;
+    height: 380px !important;
+  }
+  
+  .wheel-img {
+    width: 200px !important;
+    height: 150px !important;
+  }
+  
+  .wheel-features {
+    width: 200px !important;
+    height: 50px !important;
+  }
+}
+
+@media (max-width: 1400px) {
+  .cards-container {
+    gap: 0.5rem;
+    max-width: 1200px;
+  }
+  
+  .wheel-card,
+  .right-panel {
+    width: 280px;
+    height: 420px;
+  }
+  
+  .wheel-img {
+    width: 250px;
+    height: 190px;
+  }
+  
+  .wheel-features {
+    width: 250px;
+    height: 60px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .wheel-unlimited-container {
+    flex-direction: column;
+    gap: 2rem;
+  }
+  
+  .cards-container {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .wheel-card,
+  .right-panel {
+    width: 300px;
+    height: 400px;
+  }
+  
+  .wheel-img {
+    width: 280px;
+    height: 210px;
+  }
+  
+  .wheel-features {
+    width: 280px;
+    height: 70px;
+  }
+}
+
+/* Responsive Design */
+@media (min-width: 1200px) {
+  .left-content {
+    max-width: 700px;
+  }
+  
+  .cta-section {
+    justify-content: center;
+    width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .wheel-unlimited-container {
+    padding: 0 1rem;
+  }
+  
+  .left-content {
+    max-width: 100%;
+    padding-right: 0;
+  }
+  
+  .main-title {
+    font-size: 32px;
+  }
+  
+  .wheels-display {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+  
+  .wheel-img {
+    width: 150px;
+    height: 150px;
+  }
+  
+  .model-name {
+    font-size: 24px;
+  }
+  
+  .panel-title {
+    font-size: 28px;
+  }
+}

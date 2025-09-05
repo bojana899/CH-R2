@@ -1,0 +1,346 @@
+.wheels-section {
+  background-color: #ffffff;
+  padding: 4rem 0;
+  min-height: 100vh;
+}
+
+.wheels-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.wheels-header {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.wheels-title {
+  font-family: 'TT Norms Pro', sans-serif;
+  font-size: 3rem;
+  font-weight: bold;
+  color: #000000;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-bottom: 1rem;
+}
+
+.wheels-subtitle {
+  font-family: 'TT Norms Pro', sans-serif;
+  font-size: 1.2rem;
+  color: #666666;
+  margin: 0;
+}
+
+.wheels-content {
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+}
+
+.category-section {
+  margin-bottom: 3rem;
+}
+
+.category-title {
+  font-family: 'TT Norms Pro', sans-serif;
+  font-size: 32px;
+  font-weight: bold;
+  line-height: 60px;
+  color: #2B2B30;
+  text-transform: uppercase;
+  letter-spacing: 1.92px;
+  margin-bottom: 2rem;
+  text-align: left;
+  opacity: 1;
+}
+
+.wheels-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  justify-items: start;
+}
+
+.wheel-card {
+  background: #ffffff;
+  border-radius: 0;
+  box-shadow: none;
+  padding: 0;
+  text-align: center;
+  transition: transform 0.3s ease;
+  max-width: 350px;
+  width: 100%;
+  border: none;
+}
+
+/* Special styling for PERFORMANCE DESIGN grid */
+.performance-design-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  justify-items: start;
+}
+
+/* Special styling for PERFORMANCE DESIGN cards */
+.performance-card {
+  width: 358px;
+  height: auto;
+  background: transparent;
+  box-shadow: none;
+  padding: 0;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.performance-image-container {
+  width: 100%;
+  height: auto;
+  min-height: 200px;
+  background: transparent;
+  margin-bottom: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.performance-info {
+  position: relative;
+  background: transparent;
+  padding: 0;
+  border-radius: 0;
+}
+
+.wheel-card:hover {
+  transform: none;
+}
+
+.wheel-image-container {
+  margin-bottom: 1.5rem;
+  height: auto;
+  min-height: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: transparent;
+  border-radius: 0;
+}
+
+.wheel-image {
+  max-width: 100%;
+  max-height: 180px;
+  object-fit: contain;
+  filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.1));
+}
+
+.gradient-line {
+  width: 358px;
+  height: 1px;
+  background: linear-gradient(90deg, rgba(236, 236, 236, 0) 0%, #ABABAB 51%, rgba(236, 236, 236, 0) 100%);
+  opacity: 1;
+  margin-top: 1rem;
+}
+
+.wheel-info {
+  text-align: center;
+}
+
+.wheel-name {
+  font-family: 'TT Norms Pro', sans-serif;
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: #000000;
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  text-align: left;
+}
+
+.color-options {
+  display: flex;
+  justify-content: flex-start;
+  gap: 0.5rem;
+  margin-bottom: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.color-selector {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 2px solid #ffffff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  transition: transform 0.2s ease;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.color-selector:hover {
+  transform: scale(1.1);
+}
+
+.selector-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.wheel-link {
+  display: inline-block;
+  background-color: #CB152F;
+  color: #ffffff;
+  font-family: 'TT Norms Pro', sans-serif;
+  font-weight: 600;
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 0.8rem 1.5rem;
+  border-radius: 25px;
+  font-size: 0.9rem;
+  letter-spacing: 0.5px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.wheel-link:hover {
+  background-color: #B80000;
+  transform: translateY(-2px);
+  text-decoration: none;
+  color: #ffffff;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .wheels-container {
+    padding: 0 1rem;
+  }
+  
+  .wheels-title {
+    font-size: 2rem;
+  }
+  
+  .wheels-subtitle {
+    font-size: 1rem;
+  }
+  
+  .wheels-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+  
+  .wheel-card {
+    padding: 1.5rem;
+    background: #f5f5f5;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1rem;
+    max-width: none;
+  }
+  
+  .wheel-image-container {
+    height: auto;
+    min-height: auto;
+    width: 50%;
+    margin-bottom: 0;
+    flex-shrink: 0;
+  }
+  
+  .wheel-image {
+    max-height: 120px;
+    width: 100%;
+  }
+  
+  .wheel-info {
+    width: 50%;
+    text-align: left;
+  }
+  
+  .wheel-name {
+    font-size: 1.2rem;
+    margin-bottom: 0.8rem;
+  }
+  
+  .color-options {
+    justify-content: flex-start;
+    margin-bottom: 0;
+  }
+  
+  .gradient-line {
+    display: none;
+  }
+  
+  .category-title {
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .wheels-section {
+    padding: 2rem 0;
+  }
+  
+  .wheels-header {
+    margin-bottom: 2rem;
+  }
+  
+  .wheels-title {
+    font-size: 1.5rem;
+  }
+  
+  .wheels-content {
+    gap: 2rem;
+  }
+  
+  .wheel-card {
+    padding: 1rem;
+    background: #f5f5f5;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 0.8rem;
+  }
+  
+  .wheel-image-container {
+    width: 50%;
+    height: auto;
+    min-height: auto;
+    margin-bottom: 0;
+  }
+  
+  .wheel-image {
+    max-height: 100px;
+    width: 100%;
+  }
+  
+  .wheel-info {
+    width: 50%;
+    text-align: left;
+  }
+  
+  .wheel-name {
+    font-size: 1rem;
+    margin-bottom: 0.6rem;
+  }
+  
+  .color-options {
+    justify-content: flex-start;
+    margin-bottom: 0;
+  }
+  
+  .color-selector {
+    width: 30px;
+    height: 30px;
+  }
+  
+  .gradient-line {
+    display: none;
+  }
+}

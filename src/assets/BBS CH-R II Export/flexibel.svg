@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="64" height="64" viewBox="0 0 64 64">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Rechteck_212" data-name="Rechteck 212" width="63" height="60.453" fill="none" stroke="#575656" stroke-width="1"/>
+    </clipPath>
+  </defs>
+  <g id="flexibel" transform="translate(-550 -5391)">
+    <rect id="Rechteck_203" data-name="Rechteck 203" width="64" height="64" transform="translate(550 5391)" fill="none"/>
+    <g id="Gruppe_179" data-name="Gruppe 179" transform="translate(551 5393.202)">
+      <g id="Gruppe_178" data-name="Gruppe 178" transform="translate(0 0)" clip-path="url(#clip-path)">
+        <path id="Rechteck_206" data-name="Rechteck 206" d="M.995,0H25.157a.994.994,0,0,1,.994.994v7.52a1,1,0,0,1-1,1H.995A.995.995,0,0,1,0,8.514V.995A.995.995,0,0,1,.995,0Z" transform="translate(10.692 30.736)" fill="none" stroke="#575656" stroke-miterlimit="10" stroke-width="2"/>
+        <path id="Rechteck_207" data-name="Rechteck 207" d="M1,0H7.333a.994.994,0,0,1,.994.994V18.025a.994.994,0,0,1-.994.994H.995A.995.995,0,0,1,0,18.024V1A1,1,0,0,1,1,0Z" transform="translate(13.07 40.245)" fill="none" stroke="#575656" stroke-miterlimit="10" stroke-width="2"/>
+        <path id="Rechteck_208" data-name="Rechteck 208" d="M1,0H4.949a.994.994,0,0,1,.994.994V12.08a.995.995,0,0,1-.995.995H.995A.995.995,0,0,1,0,12.08V1A1,1,0,0,1,1,0Z" transform="translate(27.333 40.245)" fill="none" stroke="#575656" stroke-miterlimit="10" stroke-width="2"/>
+        <rect id="Rechteck_209" data-name="Rechteck 209" width="4.749" height="9.509" rx="0.995" transform="translate(1.189 30.736)" fill="none" stroke="#575656" stroke-miterlimit="10" stroke-width="2"/>
+        <path id="Rechteck_210" data-name="Rechteck 210" d="M.995,0H3.761a.994.994,0,0,1,.994.994v7.52a1,1,0,0,1-1,1H.995A.995.995,0,0,1,0,8.514V.995A.995.995,0,0,1,.995,0Z" transform="translate(41.598 30.736)" fill="none" stroke="#575656" stroke-miterlimit="10" stroke-width="2"/>
+        <path id="Rechteck_211" data-name="Rechteck 211" d="M1,0H3.761a.994.994,0,0,1,.994.994V3.76a.995.995,0,0,1-.995.995H.995A.995.995,0,0,1,0,3.76V1A1,1,0,0,1,1,0Z" transform="translate(46.352 33.113)" fill="none" stroke="#575656" stroke-miterlimit="10" stroke-width="2"/>
+        <line id="Linie_109" data-name="Linie 109" x2="4.755" transform="translate(5.937 33.113)" fill="none" stroke="#575656" stroke-miterlimit="10" stroke-width="2"/>
+        <line id="Linie_110" data-name="Linie 110" x2="4.755" transform="translate(5.937 37.868)" fill="none" stroke="#575656" stroke-miterlimit="10" stroke-width="2"/>
+        <line id="Linie_111" data-name="Linie 111" x2="3.566" transform="translate(36.843 37.868)" fill="none" stroke="#575656" stroke-miterlimit="10" stroke-width="2"/>
+        <line id="Linie_112" data-name="Linie 112" x2="4.755" transform="translate(36.843 33.113)" fill="none" stroke="#575656" stroke-miterlimit="10" stroke-width="2"/>
+        <path id="Pfad_118" data-name="Pfad 118" d="M26.833,4.685,8.3,15.383,6.518,12.291a1.185,1.185,0,0,1,.434-1.619L23.428,1.159a1.185,1.185,0,0,1,1.619.434Z" transform="translate(1.2 0.189)" fill="none" stroke="#575656" stroke-miterlimit="10" stroke-width="2"/>
+        <path id="Pfad_119" data-name="Pfad 119" d="M25.529,23.773h0a10.7,10.7,0,0,1-14.614-3.916L7.995,14.8,26.524,4.1l2.921,5.059A10.7,10.7,0,0,1,25.529,23.773Z" transform="translate(1.508 0.774)" fill="none" stroke="#575656" stroke-miterlimit="10" stroke-width="2"/>
+        <line id="Linie_113" data-name="Linie 113" x1="4.002" y1="7.132" transform="translate(29.102 23.604)" fill="none" stroke="#575656" stroke-miterlimit="10" stroke-width="2"/>
+        <line id="Linie_114" data-name="Linie 114" x1="2.696" y1="4.806" transform="translate(24.956 25.93)" fill="none" stroke="#575656" stroke-miterlimit="10" stroke-width="2"/>
+        <line id="Linie_115" data-name="Linie 115" y1="2.207" x2="7.138" transform="translate(54.673 29.717)" fill="none" stroke="#575656" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+        <line id="Linie_116" data-name="Linie 116" x2="7.138" y2="0.17" transform="translate(54.673 35.49)" fill="none" stroke="#575656" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+        <line id="Linie_117" data-name="Linie 117" x2="7.138" y2="2.547" transform="translate(54.673 39.056)" fill="none" stroke="#575656" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+      </g>
+    </g>
+  </g>
+</svg>

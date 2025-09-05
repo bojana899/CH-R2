@@ -1,0 +1,76 @@
+<!-- Inspiration Section -->
+<section class="inspiration-section">
+  <div class="inspiration-container">
+    <!-- Section Header -->
+    <div class="inspiration-header">
+      <h3 class="inspiration-subtitle">{{ 'inspiration.subtitle' | translate }}</h3>
+      <h2 class="inspiration-title">{{ 'inspiration.title' | translate }}</h2>
+    </div>
+
+    <!-- Image Gallery -->
+    <div class="gallery-container">
+      <!-- Desktop Gallery Images - Show 4 at a time -->
+      <div class="gallery-grid-desktop">
+        <div 
+          *ngFor="let image of getDesktopImages(); let i = index" 
+          class="gallery-item-desktop">
+          <img [src]="image.src" [alt]="image.altKey | translate" class="gallery-image-desktop">
+        </div>
+      </div>
+      
+      <!-- Mobile Gallery Images - Show 1 at a time -->
+      <div class="gallery-grid-mobile">
+        <div 
+          *ngFor="let image of getMobileImages(); let i = index" 
+          class="gallery-item-mobile">
+          <img [src]="image.src" [alt]="image.altKey | translate" class="gallery-image-mobile">
+          <!-- Mobile arrows over the image -->
+          <button (click)="prevSlide()" class="mobile-nav-arrow mobile-nav-left">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M15 19l-7-7 7-7"></path>
+            </svg>
+          </button>
+          <button (click)="nextSlide()" class="mobile-nav-arrow mobile-nav-right">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"></path>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Navigation - Carousel navigation (outside container for full width) -->
+  <div class="gallery-navigation">
+      <!-- Left Arrow -->
+      <button (click)="prevSlide()" class="nav-arrow nav-arrow-left">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M15 19l-7-7 7-7"></path>
+        </svg>
+      </button>
+      
+      <!-- Horizontal Dashes -->
+      <div class="navigation-dashes">
+        <div 
+          *ngFor="let dash of getNavigationDashes(); let i = index"
+          class="navigation-dash"
+          [class.active]="i === getCurrentDashIndex()"
+          (click)="goToSlide(i)">
+        </div>
+      </div>
+      
+      <!-- Right Arrow -->
+      <button (click)="nextSlide()" class="nav-arrow nav-arrow-right">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"></path>
+        </svg>
+      </button>
+    </div>
+
+  <!-- Call to Action Button -->
+  <div class="inspiration-container">
+    <div class="cta-container">
+      <button class="cta-button">{{ 'inspiration.gallery.viewAll' | translate }}</button>
+    </div>
+  </div>
+</section>
