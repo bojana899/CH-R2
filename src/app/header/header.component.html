@@ -7,7 +7,7 @@
     </a>
 
     <!-- Main Menu - Desktop -->
-    <nav class="hidden lg:flex items-center gap-6 laptop:gap-7 design:gap-8">
+    <nav class="hidden lg:flex items-center gap-6 laptop:gap-7 design:gap-8 desktop-menu">
       <a href="#" class="text-[#666666] text-[15px] leading-[24px] font-tt-norms font-normal uppercase tracking-[0px] opacity-100 text-left hover:text-gray-800 transition-all duration-300 relative no-underline">{{ 'header.menu.wheels' | translate }}</a>
       <a href="https://www.bbs.com/de/unlimited-ubersicht" target="_blank" class="text-[#666666] text-[15px] leading-[24px] font-tt-norms font-normal uppercase tracking-[0px] opacity-100 text-left hover:text-gray-800 transition-all duration-300 relative no-underline">{{ 'header.menu.technology' | translate }}</a>
       <a href="https://www.bbs.com/de/galerie" target="_blank" class="text-[#666666] text-[15px] leading-[24px] font-tt-norms font-normal uppercase tracking-[0px] opacity-100 text-left hover:text-gray-800 transition-all duration-300 relative no-underline">{{ 'header.menu.gallery' | translate }}</a>
@@ -17,7 +17,7 @@
   </div>
 
   <!-- Right Section -->
-  <div class="hidden lg:flex items-center gap-4">
+  <div class="hidden lg:flex items-center gap-4 desktop-actions">
     <!-- Action Buttons -->
     <a href="https://store.kwautomotive.de/de/shop" target="_blank" class="bg-[#DB0000] text-white text-[13px] laptop:text-[14px] design:text-[15px] leading-[20px] laptop:leading-[22px] design:leading-[24px] font-tt-norms font-normal uppercase w-[60px] laptop:w-[63px] design:w-[66px] h-[28px] laptop:h-[29px] design:h-[31px] flex items-center justify-center hover:bg-[#B80000] transition-colors duration-300 no-underline">{{ 'header.buttons.shop' | translate }}</a>
     <a href="https://www.bbs.com/de/haendlersuche" target="_blank" class="bg-black text-white text-[13px] laptop:text-[14px] design:text-[15px] leading-[20px] laptop:leading-[22px] design:leading-[24px] font-tt-norms font-normal uppercase w-[130px] laptop:w-[140px] design:w-[150px] h-[28px] laptop:h-[29px] design:h-[31px] flex items-center justify-center hover:bg-gray-800 transition-colors duration-300 no-underline">{{ 'header.buttons.dealerSearch' | translate }}</a>
@@ -51,7 +51,7 @@
     </div>
 
   <!-- Mobile Menu Icons -->
-  <div class="flex items-center gap-4 lg:hidden">
+  <div class="flex items-center gap-4 lg:hidden mobile-menu-icons">
     <button class="hover:opacity-80 transition-opacity duration-300">
       <img src="assets/Startseite/Icons/search.svg" alt="Search" class="w-5 h-5">
     </button>
@@ -70,10 +70,10 @@
 </header>
 
 <!-- Mobile Menu Overlay -->
-<div class="fixed inset-0 bg-black bg-opacity-50 z-[999] lg:hidden" [class.hidden]="!showMobileMenu" (click)="toggleMobileMenu($event)"></div>
+<div class="fixed inset-0 bg-black bg-opacity-50 z-[999] lg:hidden mobile-menu-overlay" [class.hidden]="!showMobileMenu" (click)="toggleMobileMenu($event)"></div>
 
 <!-- Mobile Menu -->
-<div class="fixed top-[57px] left-0 w-full bg-white z-[1000] lg:hidden transform transition-transform duration-300 max-h-[calc(100vh-57px)] overflow-y-auto" [class.translate-x-0]="showMobileMenu" [class.-translate-x-full]="!showMobileMenu">
+<div class="fixed top-[57px] left-0 w-full bg-white z-[1000] lg:hidden mobile-menu transform transition-transform duration-300 max-h-[calc(100vh-57px)] overflow-y-auto" [class.translate-x-0]="showMobileMenu" [class.-translate-x-full]="!showMobileMenu">
   <nav class="flex flex-col p-6">
     <!-- Vehicle Selector -->
     <div class="flex items-center gap-2 mb-6">
