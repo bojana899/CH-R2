@@ -1,7 +1,226 @@
-:host {
+/* BBS CH-RII Carousel Styles */
+.b-chrII {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background-color: #000;
+  overflow: hidden;
+}
+
+.b-chrII__hero {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.b-chrII__video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+
+.b-chrII__videoShaddow {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, rgba(0,0,0,0.7) 0%, rgba(0,0,0,0.3) 50%, rgba(0,0,0,0.1) 100%);
+  z-index: 2;
+}
+
+.b-chrII__vid {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 1;
+}
+
+.b-chrII__vid--desktop {
   display: block;
-  min-height: 100vh;
-  background-color: #FFFFFF;
+}
+
+.b-chrII__vid--mobile {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .b-chrII__vid--desktop {
+    display: none;
+  }
+  
+  .b-chrII__vid--mobile {
+    display: block;
+  }
+}
+
+.b-chrII__text {
+  position: relative;
+  z-index: 10;
+  padding-left: 80px;
+  max-width: 600px;
+}
+
+.b-chrII__title {
+  font-family: 'Arial', 'Helvetica', sans-serif;
+  font-size: 72px;
+  font-weight: 200;
+  line-height: 70px;
+  letter-spacing: 2px;
+  color: #FFFFFF;
+  text-align: left;
+  margin-bottom: 15px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.b-chrII__logo {
+  width: 80px;
+  height: auto;
+}
+
+.b-chrII__subtitle {
+  font-family: 'Arial', 'Helvetica', sans-serif;
+  font-size: 20px;
+  font-weight: 200;
+  line-height: 22px;
+  letter-spacing: 1px;
+  color: #CB152F;
+  text-transform: uppercase;
+  text-align: left;
+  margin-bottom: 10px;
+}
+
+.b-chrII__subtitle--white {
+  color: #fff;
+  font-size: 24px;
+  font-weight: 200;
+  font-family: 'Arial', 'Helvetica', sans-serif;
+  line-height: 26px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.b-chrII__subtitle--letter {
+  font-weight: 400;
+}
+
+.b-chrII__subtitle--margin {
+  margin-bottom: 40px;
+}
+
+.b-chrII__button {
+  display: inline-block;
+  width: 232px;
+  height: 44px;
+  background: #DB0000 0% 0% no-repeat padding-box;
+  border-radius: 25px;
+  color: #fff;
+  font-family: 'Arial', 'Helvetica', sans-serif;
+  font-size: 16px;
+  font-weight: 200;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  text-decoration: none;
+  text-align: center;
+  line-height: 44px;
+  transition: background-color 0.3s ease;
+  border: none;
+  cursor: pointer;
+}
+
+.b-chrII__button:hover {
+  background-color: #B80000;
+  color: #fff;
+  text-decoration: none;
+}
+
+.b-chrII__animation {
+  position: absolute;
+  bottom: 40px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 20;
+}
+
+.b-chrII__animation .icon {
+  width: 20px;
+  height: 30px;
+  border: 2px solid rgba(255, 255, 255, 0.6);
+  border-radius: 10px;
+  position: relative;
+}
+
+.b-chrII__animation .icon::after {
+  content: '';
+  position: absolute;
+  bottom: 6px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 2px;
+  height: 8px;
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 1px;
+  animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateX(-50%) translateY(0);
+  }
+  40% {
+    transform: translateX(-50%) translateY(-10px);
+  }
+  60% {
+    transform: translateX(-50%) translateY(-5px);
+  }
+}
+
+@media (max-width: 768px) {
+  .b-chrII__text {
+    padding-left: 20px;
+    padding-right: 20px;
+    max-width: 100%;
+  }
+  
+  .b-chrII__title {
+    font-size: 48px;
+    line-height: 56px;
+    margin-bottom: 15px;
+  }
+  
+  .b-chrII__logo {
+    width: 40px;
+  }
+  
+  .b-chrII__subtitle {
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+  
+  .b-chrII__subtitle--white {
+    font-size: 18px;
+    line-height: 24px;
+  }
+  
+  .b-chrII__button {
+    padding: 15px 30px;
+    font-size: 16px;
+    line-height: 44px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
 }
 
 /* Video styling */

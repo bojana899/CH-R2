@@ -67,6 +67,10 @@ export class HeroCarouselComponent implements AfterViewInit {
     });
   }
 
+  goToSlide(index: number) {
+    this.changeSlide(index);
+  }
+
   pauseAllVideos() {
     this.videoRefs?.forEach(videoEl => {
       const video = videoEl.nativeElement;
