@@ -10,6 +10,22 @@ import { TranslatePipe } from '../../../pipes/translate.pipe';
   styleUrl: './go-unlimited.component.css'
 })
 export class GoUnlimitedComponent {
+  // URLs for buttons
+  buyNowUrl = 'https://store.kwautomotive.de/de-en/bbs/shop';
+  configureUrl = 'https://store.kwautomotive.de/de-en/bbs/shop';
+  
+  constructor() {
+    // Set URLs based on current language
+    const currentLang = localStorage.getItem('language') || 'en';
+    if (currentLang === 'de') {
+      this.buyNowUrl = 'https://store.kwautomotive.de/de/bbs/shop';
+      this.configureUrl = 'https://store.kwautomotive.de/de/bbs/shop';
+    } else {
+      this.buyNowUrl = 'https://store.kwautomotive.de/de-en/bbs/shop';
+      this.configureUrl = 'https://store.kwautomotive.de/de-en/bbs/shop';
+    }
+  }
+  
   // Toggle states for expandable sections
   dimensionsExpanded = true;  // Start expanded to match the image
   fitExpanded = false;        // Start collapsed

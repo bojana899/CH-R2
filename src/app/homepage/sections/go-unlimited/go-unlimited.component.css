@@ -177,6 +177,7 @@
   margin: 0 auto;
   white-space: normal;
   line-height: 1.2;
+  text-decoration: none;
 }
 
 .cta-button:hover {
