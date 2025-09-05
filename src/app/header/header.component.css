@@ -1,29 +1,95 @@
+/* ========================================
+   UNIVERSAL RESPONSIVE HEADER (2025)
+   Works on ALL Devices - iPhone, Android, Tablets, Foldables
+   ======================================== */
+
 /* Custom font family for TT Norms Pro */
 .font-tt-norms {
   font-family: 'TT Norms Pro', sans-serif;
 }
 
-/* Large screens - 1920px and above */
-@media (min-width: 1920px) {
-  header {
-    padding-left: 200px !important;
-    padding-right: 200px !important;
-  }
+/* ========================================
+   UNIVERSAL BASE STYLES
+   ======================================== */
+
+/* Universal header styles - works on ALL devices */
+header {
+  /* Universal safe area support */
+  padding-top: env(safe-area-inset-top, 0);
+  padding-bottom: env(safe-area-inset-bottom, 0);
+  padding-left: env(safe-area-inset-left, 0);
+  padding-right: env(safe-area-inset-right, 0);
+  
+  /* Universal viewport handling */
+  max-width: 100vw;
+  overflow-x: hidden;
+  width: 100%;
+  
+  /* Universal flexbox layout */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  
+  /* Universal positioning */
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  
+  /* Universal height calculation */
+  height: calc(3.5rem + env(safe-area-inset-top, 0));
+  min-height: 3.5rem;
+  
+  /* Universal hardware acceleration */
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  
+  /* Universal background */
+  background-color: white;
 }
 
-/* Responsive margins for smaller screens */
-@media (max-width: 1919px) and (min-width: 1600px) {
-  header {
-    padding-left: 100px !important;
-    padding-right: 100px !important;
-  }
+/* Universal mobile menu container */
+.lg\\:hidden {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  justify-content: flex-end;
+  flex-shrink: 0;
 }
 
-@media (max-width: 1599px) and (min-width: 1400px) {
-  header {
-    padding-left: 50px !important;
-    padding-right: 50px !important;
-  }
+/* Universal mobile menu buttons */
+.lg\\:hidden button {
+  padding: 0.25rem;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 2.75rem; /* 44px - universal touch target */
+  min-height: 2.75rem; /* 44px - universal touch target */
+  
+  /* Universal touch handling */
+  -webkit-tap-highlight-color: transparent;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  user-select: none;
+  outline: none;
+}
+
+/* Universal mobile menu icons */
+.lg\\:hidden img,
+.lg\\:hidden svg {
+  width: 1rem;
+  height: 1rem;
+  transition: opacity 0.2s ease;
+  image-rendering: -webkit-optimize-contrast;
+}
+
+.lg\\:hidden button:hover img,
+.lg\\:hidden button:hover svg {
+  opacity: 0.7;
 }
 
 /* Navigation link hover effects */
@@ -50,29 +116,399 @@ nav a.active::after {
   width: 100%;
 }
 
-/* Responsive adjustments for smaller screens */
-@media (max-width: 1280px) {
-  /* Hide navigation menu on smaller screens */
-  .nav-menu {
-    display: none;
+/* ========================================
+   CONSISTENT DESIGN - LIKE IPAD AIR
+   ======================================== */
+
+/* All devices use iPad Air-like styling */
+@media (min-width: 240px) {
+  header {
+    /* iPad Air-like padding for all devices */
+    padding-left: max(1.5rem, env(safe-area-inset-left, 0));
+    padding-right: max(1.5rem, env(safe-area-inset-right, 0));
   }
   
-  /* Adjust button sizes for smaller screens */
-  .btn-responsive {
-    padding: 0.25rem 0.5rem;
-    font-size: 12px;
+  .lg\\:hidden {
+    /* iPad Air-like spacing */
+    gap: 1.5rem;
+  }
+  
+  .lg\\:hidden img,
+  .lg\\:hidden svg {
+    /* iPad Air-like icon size */
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+  
+  .lg\\:hidden button {
+    /* iPad Air-like touch targets */
+    min-width: 3.5rem;
+    min-height: 3.5rem;
+    padding: 0.5rem;
   }
 }
 
-@media (max-width: 768px) {
-  /* Further adjustments for mobile */
-  .btn-mobile {
-    padding: 0.25rem 0.4rem;
-    font-size: 10px;
+/* Maintain iPad Air consistency across all breakpoints */
+@media (min-width: 320px) {
+  header {
+    padding-left: max(1.5rem, env(safe-area-inset-left, 0));
+    padding-right: max(1.5rem, env(safe-area-inset-right, 0));
   }
   
-  .language-mobile {
-    width: 60px;
-    height: 20px;
+  .lg\\:hidden {
+    gap: 1.5rem;
+  }
+  
+  .lg\\:hidden img,
+  .lg\\:hidden svg {
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+  
+  .lg\\:hidden button {
+    min-width: 3.5rem;
+    min-height: 3.5rem;
+    padding: 0.5rem;
+  }
+}
+
+@media (min-width: 480px) {
+  header {
+    padding-left: max(1.5rem, env(safe-area-inset-left, 0));
+    padding-right: max(1.5rem, env(safe-area-inset-right, 0));
+  }
+  
+  .lg\\:hidden {
+    gap: 1.5rem;
+  }
+  
+  .lg\\:hidden img,
+  .lg\\:hidden svg {
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+  
+  .lg\\:hidden button {
+    min-width: 3.5rem;
+    min-height: 3.5rem;
+    padding: 0.5rem;
+  }
+}
+
+@media (min-width: 768px) {
+  header {
+    padding-left: max(1.5rem, env(safe-area-inset-left, 0));
+    padding-right: max(1.5rem, env(safe-area-inset-right, 0));
+  }
+  
+  .lg\\:hidden {
+    gap: 1.5rem;
+  }
+  
+  .lg\\:hidden img,
+  .lg\\:hidden svg {
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+  
+  .lg\\:hidden button {
+    min-width: 3.5rem;
+    min-height: 3.5rem;
+    padding: 0.5rem;
+  }
+}
+
+/* Small laptops (1024px - 1279px) */
+@media (min-width: 1024px) {
+  header {
+    padding-left: max(2rem, env(safe-area-inset-left, 0));
+    padding-right: max(2rem, env(safe-area-inset-right, 0));
+  }
+  
+  /* Hide mobile menu, show desktop menu */
+  .lg\\:hidden {
+    display: none !important;
+  }
+  
+  .lg\\:flex {
+    display: flex !important;
+  }
+}
+
+/* Medium laptops (1280px - 1399px) */
+@media (min-width: 1280px) {
+  header {
+    padding-left: max(3rem, env(safe-area-inset-left, 0));
+    padding-right: max(3rem, env(safe-area-inset-right, 0));
+  }
+}
+
+/* Large laptops (1400px - 1599px) */
+@media (min-width: 1400px) {
+  header {
+    padding-left: max(3.125rem, env(safe-area-inset-left, 0));
+    padding-right: max(3.125rem, env(safe-area-inset-right, 0));
+  }
+}
+
+/* Extra large laptops (1600px - 1919px) */
+@media (min-width: 1600px) {
+  header {
+    padding-left: max(6.25rem, env(safe-area-inset-left, 0));
+    padding-right: max(6.25rem, env(safe-area-inset-right, 0));
+  }
+}
+
+/* Ultra-wide screens (1920px+) */
+@media (min-width: 1920px) {
+  header {
+    padding-left: max(12.5rem, env(safe-area-inset-left, 0));
+    padding-right: max(12.5rem, env(safe-area-inset-right, 0));
+  }
+}
+
+/* ========================================
+   CONSISTENT DEVICE SIMULATIONS - LIKE IPAD AIR
+   ======================================== */
+
+/* All devices maintain iPad Air consistency */
+@media (min-width: 375px) and (max-width: 375px) and (min-height: 667px) and (max-height: 667px) {
+  header {
+    /* iPad Air-like padding */
+    padding-left: max(1.5rem, env(safe-area-inset-left, 0));
+    padding-right: max(1.5rem, env(safe-area-inset-right, 0));
+  }
+  
+  .lg\\:hidden {
+    /* iPad Air-like spacing */
+    gap: 1.5rem;
+  }
+  
+  .lg\\:hidden img,
+  .lg\\:hidden svg {
+    /* iPad Air-like icon size */
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+  
+  .lg\\:hidden button {
+    /* iPad Air-like touch targets */
+    min-width: 3.5rem;
+    min-height: 3.5rem;
+    padding: 0.5rem;
+  }
+}
+
+@media (min-width: 390px) and (max-width: 390px) and (min-height: 844px) and (max-height: 844px) {
+  header {
+    padding-left: max(1.5rem, env(safe-area-inset-left, 0));
+    padding-right: max(1.5rem, env(safe-area-inset-right, 0));
+  }
+  
+  .lg\\:hidden {
+    gap: 1.5rem;
+  }
+  
+  .lg\\:hidden img,
+  .lg\\:hidden svg {
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+  
+  .lg\\:hidden button {
+    min-width: 3.5rem;
+    min-height: 3.5rem;
+    padding: 0.5rem;
+  }
+}
+
+@media (min-width: 428px) and (max-width: 428px) and (min-height: 926px) and (max-height: 926px) {
+  header {
+    padding-left: max(1.5rem, env(safe-area-inset-left, 0));
+    padding-right: max(1.5rem, env(safe-area-inset-right, 0));
+  }
+  
+  .lg\\:hidden {
+    gap: 1.5rem;
+  }
+  
+  .lg\\:hidden img,
+  .lg\\:hidden svg {
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+  
+  .lg\\:hidden button {
+    min-width: 3.5rem;
+    min-height: 3.5rem;
+    padding: 0.5rem;
+  }
+}
+
+/* iPad Air reference design */
+@media (min-width: 768px) and (max-width: 768px) and (min-height: 1024px) and (max-height: 1024px) {
+  header {
+    /* iPad Air reference padding */
+    padding-left: max(1.5rem, env(safe-area-inset-left, 0));
+    padding-right: max(1.5rem, env(safe-area-inset-right, 0));
+  }
+  
+  .lg\\:hidden {
+    /* iPad Air reference spacing */
+    gap: 1.5rem;
+  }
+  
+  .lg\\:hidden img,
+  .lg\\:hidden svg {
+    /* iPad Air reference icon size */
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+  
+  .lg\\:hidden button {
+    /* iPad Air reference touch targets */
+    min-width: 3.5rem;
+    min-height: 3.5rem;
+    padding: 0.5rem;
+  }
+}
+
+/* iPad Pro maintains iPad Air consistency */
+@media (min-width: 1024px) and (max-width: 1024px) and (min-height: 1366px) and (max-height: 1366px) {
+  header {
+    /* Slightly more padding for larger screen */
+    padding-left: max(2rem, env(safe-area-inset-left, 0));
+    padding-right: max(2rem, env(safe-area-inset-right, 0));
+  }
+  
+  .lg\\:hidden {
+    /* iPad Air-like spacing */
+    gap: 1.5rem;
+  }
+  
+  .lg\\:hidden img,
+  .lg\\:hidden svg {
+    /* iPad Air-like icon size */
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+  
+  .lg\\:hidden button {
+    /* iPad Air-like touch targets */
+    min-width: 3.5rem;
+    min-height: 3.5rem;
+    padding: 0.5rem;
+  }
+}
+
+/* ========================================
+   UNIVERSAL ACCESSIBILITY & PERFORMANCE
+   ======================================== */
+
+/* Universal reduced motion support */
+@media (prefers-reduced-motion: reduce) {
+  nav a::after,
+  .lg\\:hidden img,
+  .lg\\:hidden svg {
+    transition: none;
+  }
+}
+
+/* Universal high contrast support */
+@media (prefers-contrast: high) {
+  .lg\\:hidden img,
+  .lg\\:hidden svg {
+    filter: contrast(1.5);
+  }
+}
+
+/* ========================================
+   UNIVERSAL LANDSCAPE SUPPORT
+   ======================================== */
+
+/* Universal landscape orientation */
+@media (orientation: landscape) and (max-height: 500px) {
+  header {
+    height: calc(3rem + env(safe-area-inset-top, 0));
+  }
+  
+  .lg\\:hidden {
+    gap: 0.75rem;
+  }
+  
+  .lg\\:hidden img,
+  .lg\\:hidden svg {
+    width: 1.125rem;
+    height: 1.125rem;
+  }
+}
+
+/* ========================================
+   UNIVERSAL FOLDABLE SUPPORT
+   ======================================== */
+
+/* Universal foldable device support */
+@media (spanning: single-fold-vertical) {
+  header {
+    padding-left: max(1rem, env(safe-area-inset-left, 0));
+    padding-right: max(1rem, env(safe-area-inset-right, 0));
+  }
+  
+  .lg\\:hidden {
+    gap: 1rem;
+  }
+  
+  .lg\\:hidden img,
+  .lg\\:hidden svg {
+    width: 1.25rem;
+    height: 1.25rem;
+  }
+}
+
+@media (spanning: single-fold-horizontal) {
+  header {
+    padding-left: max(1.5rem, env(safe-area-inset-left, 0));
+    padding-right: max(1.5rem, env(safe-area-inset-right, 0));
+    height: calc(4rem + env(safe-area-inset-top, 0));
+  }
+  
+  .lg\\:hidden {
+    gap: 1.5rem;
+    justify-content: center;
+  }
+  
+  .lg\\:hidden img,
+  .lg\\:hidden svg {
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+}
+
+@media (horizontal-viewport-segments: 2) {
+  header {
+    padding-left: max(2rem, env(safe-area-inset-left, 0));
+    padding-right: max(2rem, env(safe-area-inset-right, 0));
+  }
+  
+  .lg\\:hidden {
+    gap: 2rem;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+}
+
+@media (vertical-viewport-segments: 2) {
+  header {
+    height: calc(3rem + env(safe-area-inset-top, 0));
+  }
+  
+  .lg\\:hidden {
+    gap: 0.75rem;
+  }
+  
+  .lg\\:hidden img,
+  .lg\\:hidden svg {
+    width: 1.125rem;
+    height: 1.125rem;
   }
 }
