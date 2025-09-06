@@ -3,7 +3,8 @@
     "slides": {
       "chrII": {
         "title": "CH-R II",
-        "buttonText": "ORDER THE CH-R II NOW"
+        "buttonText": "ORDER THE CH-R II NOW",
+        "subtitle": "MORE THAN 345.600 DIFFERENT STYLES."
       },
       "action": {
         "title": "Action",
@@ -160,7 +161,8 @@
     "title": "CUSTOMIZATION OPTIONS FOR A WHEEL THAT ATTRACTS ATTENTION",
     "gallery": {
       "alt": "BBS Wheels Gallery",
-      "viewAll": "VIEW COMPLETE WHEEL GALLERY"
+      "viewAll": "VIEW COMPLETE WHEEL GALLERY",
+      "showAll": "Show all wheels >"
     }
   },
   "goUnlimited": {
@@ -202,6 +204,73 @@
     "buttons": {
       "buyNow": "BUY NOW",
       "configure": "CONFIGURE NOW"
+    },
+    "productNames": {
+      "standard": "CH-R II STANDARD",
+      "unlimited": "CH-R II UNLIMITED"
+    },
+    "badge": {
+      "new": "NEW"
+    },
+    "dimensions": {
+      "standard": {
+        "baseWheels": "45 Base wheels",
+        "details": "3 Concavities<br>3 diameters<br>5 wheel widths<br>from 15,5 kg"
+      },
+      "unlimited": {
+        "baseWheels": "63 Base wheels",
+        "details": "3 concavities<br>3 diameters<br>7 wheel widths<br>from 15,2 kg"
+      }
+    },
+    "fit": {
+      "standard": {
+        "combinations": "10 combinations",
+        "details": "5-hole bolt pattern – fixed<br>2 rim offsets – fixed<br>Aluminum centering rings"
+      },
+      "unlimited": {
+        "combinations": "120 combinations",
+        "details": "12 adjustable bolt patterns<br>10 adjustable rim offsets<br>Composite centering rings"
+      }
+    },
+    "style": {
+      "standard": {
+        "versions": "3 versions",
+        "details": "Permanently defined<br>3 wheel colors<br>Center caps - pre-defined<br>Rim protectors - pre-defined<br>Wheel bolts - pre-defined<br>Valve caps - pre-defined"
+      },
+      "unlimited": {
+        "versions": "345,600 versions",
+        "details": "Freely configurable<br>80 wheel colors<br>24 center caps<br>6 rim protectors<br>5 wheel bolt versions<br>8 valve caps"
+      }
+    },
+    "styleComponents": {
+      "title": "STYLE COMPONENTS - CUSTOMIZE YOUR UNLIMITED WHEEL",
+      "subtitle": "BBS UNLIMITED ACCESSORIES CAN BE RETROFITTED OR CONVERTED AT ANY TIME",
+      "accessories": {
+        "centerCaps": "Center caps",
+        "rimProtector": "Rim protector",
+        "wheelBolts": "Wheel bolts",
+        "valveCaps": "Valve Caps"
+      },
+      "descriptions": {
+        "centerCaps": "With a wide range of color and logo combinations, BBS center caps offer maximum customization for any wheel. From classic 2D designs to exclusive rotating caps with 3D logos - there's a perfect match for every style. This makes every BBS wheel a true one-of-a-kind.",
+        "rimProtector": "Our rim protectors protect your BBS wheels from contact with curbs and other damage. Choose rim protectors in your favorite color for the perfect look of your individual BBS wheel.",
+        "wheelBolts": "High-quality wheel bolts ensure secure mounting of your BBS wheels. Available in various colors and finishes to match your wheel design perfectly.",
+        "valveCaps": "Premium valve caps complete the look of your BBS wheels. Available in multiple colors and materials for the perfect finishing touch."
+      }
+    },
+    "features": {
+      "flexibleStyling": {
+        "title": "Flexible Styling",
+        "subtitle": "Customize your wheels at any time"
+      },
+      "upgradeable": {
+        "title": "Upgradeable",
+        "subtitle": "Accessories are also available later"
+      },
+      "individualOptics": {
+        "title": "Individual optics",
+        "subtitle": "Easy wheel individualization"
+      }
     }
   },
   "wheelsUnlimited": {
@@ -220,5 +289,10 @@
     },
     "configureButton": "CONFIGURE YOUR WHEEL",
     "allDetailsButton": "ALL DETAILS"
+  },
+  "wheelModels": {
+    "ciR": "CI-R",
+    "ccR": "CC-R",
+    "chrII": "CH-R II"
   }
 }

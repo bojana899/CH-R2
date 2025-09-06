@@ -25,7 +25,7 @@
           </div>
         </div>
         
-        <h3 class="product-name">CH-R II STANDARD</h3>
+        <h3 class="product-name">{{ 'goUnlimited.productNames.standard' | translate }}</h3>
         <p class="product-description">{{ 'goUnlimited.standard.description' | translate }}</p>
         
                   <a [href]="buyNowUrl" target="_blank" class="cta-button primary">
@@ -35,7 +35,7 @@
       
       <!-- Right Column - CH-R II UNLIMITED -->
       <div class="product-column unlimited">
-        <div class="new-badge">NEW</div>
+        <div class="new-badge">{{ 'goUnlimited.badge.new' | translate }}</div>
         <div class="product-image-container">
           <img [src]="unlimitedWheelImage.src" [alt]="unlimitedWheelImage.altKey | translate" class="product-image">
         </div>
@@ -49,7 +49,7 @@
           </div>
         </div>
         
-        <h3 class="product-name">CH-R II UNLIMITED</h3>
+        <h3 class="product-name">{{ 'goUnlimited.productNames.unlimited' | translate }}</h3>
         <p class="product-description">{{ 'goUnlimited.unlimited.description' | translate }}</p>
         
                   <a [href]="configureUrl" target="_blank" class="cta-button primary">
@@ -68,21 +68,13 @@
       <div class="section-icon" (click)="toggleDimensions()">{{ dimensionsExpanded ? '-' : '+' }}</div>
       <div class="comparison">
         <div class="column">
-          <div class="main-text">45 Base wheels</div>
-          <div class="subtext" [class.expanded]="dimensionsExpanded">
-            3 Concavities<br>
-            3 diameters<br>
-            5 wheel widths<br>
-            from 15,5 kg
+          <div class="main-text">{{ 'goUnlimited.dimensions.standard.baseWheels' | translate }}</div>
+          <div class="subtext" [class.expanded]="dimensionsExpanded" [innerHTML]="'goUnlimited.dimensions.standard.details' | translate">
           </div>
         </div>
         <div class="column">
-          <div class="main-text">63 Base wheels</div>
-          <div class="subtext" [class.expanded]="dimensionsExpanded">
-            3 concavities<br>
-            3 diameters<br>
-            7 wheel widths<br>
-            from 15,2 kg
+          <div class="main-text">{{ 'goUnlimited.dimensions.unlimited.baseWheels' | translate }}</div>
+          <div class="subtext" [class.expanded]="dimensionsExpanded" [innerHTML]="'goUnlimited.dimensions.unlimited.details' | translate">
           </div>
         </div>
       </div>
@@ -96,22 +88,16 @@
           <div class="pattern-image">
             <img [src]="fitStandardImage.src" [alt]="fitStandardImage.altKey | translate" class="pattern-img">
           </div>
-          <div class="main-text">10 combinations</div>
-          <div class="subtext" [class.expanded]="fitExpanded">
-            5-hole bolt pattern – fixed<br>
-            2 rim offsets – fixed<br>
-            Aluminum centering rings
+          <div class="main-text">{{ 'goUnlimited.fit.standard.combinations' | translate }}</div>
+          <div class="subtext" [class.expanded]="fitExpanded" [innerHTML]="'goUnlimited.fit.standard.details' | translate">
           </div>
         </div>
         <div class="column">
           <div class="pattern-image">
             <img [src]="fitUnlimitedImage.src" [alt]="fitUnlimitedImage.altKey | translate" class="pattern-img">
           </div>
-          <div class="main-text">120 combinations</div>
-          <div class="subtext" [class.expanded]="fitExpanded">
-            12 adjustable bolt patterns<br>
-            10 adjustable rim offsets<br>
-            Composite centering rings
+          <div class="main-text">{{ 'goUnlimited.fit.unlimited.combinations' | translate }}</div>
+          <div class="subtext" [class.expanded]="fitExpanded" [innerHTML]="'goUnlimited.fit.unlimited.details' | translate">
           </div>
         </div>
       </div>
@@ -125,28 +111,16 @@
           <div class="pattern-image">
             <img [src]="styleStandardImage.src" [alt]="styleStandardImage.altKey | translate" class="pattern-img">
           </div>
-          <div class="main-text">3 versions</div>
-          <div class="subtext" [class.expanded]="styleExpanded">
-            Permanently defined<br>
-            3 wheel colors<br>
-            Center caps - pre-defined<br>
-            Rim protectors - pre-defined<br>
-            Wheel bolts - pre-defined<br>
-            Valve caps - pre-defined
+          <div class="main-text">{{ 'goUnlimited.style.standard.versions' | translate }}</div>
+          <div class="subtext" [class.expanded]="styleExpanded" [innerHTML]="'goUnlimited.style.standard.details' | translate">
           </div>
         </div>
         <div class="column">
           <div class="pattern-image">
             <img [src]="styleUnlimitedImage.src" [alt]="styleUnlimitedImage.altKey | translate" class="pattern-img">
           </div>
-          <div class="main-text">345,600 versions</div>
-          <div class="subtext" [class.expanded]="styleExpanded">
-            Freely configurable<br>
-            80 wheel colors<br>
-            24 center caps<br>
-            6 rim protectors<br>
-            5 wheel bolt versions<br>
-            8 valve caps
+          <div class="main-text">{{ 'goUnlimited.style.unlimited.versions' | translate }}</div>
+          <div class="subtext" [class.expanded]="styleExpanded" [innerHTML]="'goUnlimited.style.unlimited.details' | translate">
           </div>
         </div>
       </div>
@@ -160,26 +134,26 @@
           <div class="flow-forming-image">
             <img src="assets/BBS CH-R II Export/flow_forming-1.png" alt="Flow Forming Process" class="flow-forming-img">
           </div>
-          <div class="flow-forming-text">Flow Forming</div>
+          <div class="flow-forming-text">{{ 'goUnlimited.comparison.flowForming' | translate }}</div>
         </div>
         
         <div class="flow-forming-item">
           <div class="flow-forming-image">
             <img src="assets/BBS CH-R II Export/flow_forming-1.png" alt="Flow Forming Process" class="flow-forming-img">
           </div>
-          <div class="flow-forming-text">Flow Forming</div>
+          <div class="flow-forming-text">{{ 'goUnlimited.comparison.flowForming' | translate }}</div>
         </div>
       </div>
     </div>
     
     <!-- Style Components Section -->
     <div class="style-components-section">
-      <h3 class="style-components-title">STYLE COMPONENTS - CUSTOMIZE YOUR UNLIMITED WHEEL</h3>
-      <p class="style-components-subtitle">BBS UNLIMITED ACCESSORIES CAN BE RETROFITTED OR CONVERTED AT ANY TIME</p>
+      <h3 class="style-components-title">{{ 'goUnlimited.styleComponents.title' | translate }}</h3>
+      <p class="style-components-subtitle">{{ 'goUnlimited.styleComponents.subtitle' | translate }}</p>
       
       <div class="accessory-cards">
         <div class="accessory-card" [class.expanded]="selectedAccessory === 0" (click)="selectAccessory(0)">
-          <h4 class="accessory-title">Center caps</h4>
+          <h4 class="accessory-title">{{ 'goUnlimited.styleComponents.accessories.centerCaps' | translate }}</h4>
           <div class="accessory-image">
             <img src="assets/BBS CH-R II Export/BBS_Zubehor_BG_Nabendeckel.jpg" alt="Center caps" class="accessory-img desktop-img">
             <img src="assets/BBS CH-R II Export/Mobile/BBS_BG_Nabendeckel.jpg" alt="Center caps" class="accessory-img mobile-img">
@@ -187,7 +161,7 @@
         </div>
         
         <div class="accessory-card" [class.expanded]="selectedAccessory === 1" (click)="selectAccessory(1)">
-          <h4 class="accessory-title">Rim protector</h4>
+          <h4 class="accessory-title">{{ 'goUnlimited.styleComponents.accessories.rimProtector' | translate }}</h4>
           <div class="accessory-image">
             <img src="assets/BBS CH-R II Export/BBS_Zubehor_BG_Anfahrschutz.jpg" alt="Rim protector" class="accessory-img desktop-img">
             <img src="assets/BBS CH-R II Export/Mobile/BBS_BG_Anfahrschutz.jpg" alt="Rim protector" class="accessory-img mobile-img">
@@ -195,7 +169,7 @@
         </div>
         
         <div class="accessory-card" [class.expanded]="selectedAccessory === 2" (click)="selectAccessory(2)">
-          <h4 class="accessory-title">Wheel bolts</h4>
+          <h4 class="accessory-title">{{ 'goUnlimited.styleComponents.accessories.wheelBolts' | translate }}</h4>
           <div class="accessory-image">
             <img src="assets/BBS CH-R II Export/BBS_Zubehor_BG_Radschrauben.jpg" alt="Wheel bolts" class="accessory-img desktop-img">
             <img src="assets/BBS CH-R II Export/Mobile/BBS_BG_Radschrauben.jpg" alt="Wheel bolts" class="accessory-img mobile-img">
@@ -203,7 +177,7 @@
         </div>
         
         <div class="accessory-card" [class.expanded]="selectedAccessory === 3" (click)="selectAccessory(3)">
-          <h4 class="accessory-title">Valve Caps</h4>
+          <h4 class="accessory-title">{{ 'goUnlimited.styleComponents.accessories.valveCaps' | translate }}</h4>
           <div class="accessory-image">
             <img src="assets/BBS CH-R II Export/BBS_Zubehor_BG_Ventildeckel.jpg" alt="Valve caps" class="accessory-img desktop-img">
             <img src="assets/BBS CH-R II Export/Mobile/BB_BG_Ventildeckel.jpg" alt="Valve caps" class="accessory-img mobile-img">
@@ -212,9 +186,9 @@
       </div>
       
       <div class="accessory-description">
-        <h4 class="description-title">{{ selectedAccessory === 0 ? 'Center caps' : selectedAccessory === 1 ? 'Rim protector' : selectedAccessory === 2 ? 'Wheel bolts' : 'Valve Caps' }}</h4>
+        <h4 class="description-title">{{ selectedAccessory === 0 ? ('goUnlimited.styleComponents.accessories.centerCaps' | translate) : selectedAccessory === 1 ? ('goUnlimited.styleComponents.accessories.rimProtector' | translate) : selectedAccessory === 2 ? ('goUnlimited.styleComponents.accessories.wheelBolts' | translate) : ('goUnlimited.styleComponents.accessories.valveCaps' | translate) }}</h4>
         <p class="description-text">
-          {{ getAccessoryDescription(selectedAccessory) }}
+          {{ selectedAccessory === 0 ? ('goUnlimited.styleComponents.descriptions.centerCaps' | translate) : selectedAccessory === 1 ? ('goUnlimited.styleComponents.descriptions.rimProtector' | translate) : selectedAccessory === 2 ? ('goUnlimited.styleComponents.descriptions.wheelBolts' | translate) : ('goUnlimited.styleComponents.descriptions.valveCaps' | translate) }}
         </p>
       </div>
       
@@ -223,24 +197,24 @@
           <div class="feature-icon">
             <img src="assets/BBS%20CH-R%20II%20Export/flexibel.svg" alt="Flexible Styling" class="feature-icon-img">
           </div>
-          <div class="feature-title">Flexible Styling</div>
-          <div class="feature-subtitle">Customize your wheels at any time</div>
+          <div class="feature-title">{{ 'goUnlimited.features.flexibleStyling.title' | translate }}</div>
+          <div class="feature-subtitle">{{ 'goUnlimited.features.flexibleStyling.subtitle' | translate }}</div>
         </div>
         
         <div class="feature-card">
           <div class="feature-icon">
             <img src="assets/BBS%20CH-R%20II%20Export/nnn.svg" alt="Upgradeable" class="feature-icon-img">
           </div>
-          <div class="feature-title">Upgradeable</div>
-          <div class="feature-subtitle">Accessories are also available later</div>
+          <div class="feature-title">{{ 'goUnlimited.features.upgradeable.title' | translate }}</div>
+          <div class="feature-subtitle">{{ 'goUnlimited.features.upgradeable.subtitle' | translate }}</div>
         </div>
         
         <div class="feature-card">
           <div class="feature-icon">
             <img src="assets/BBS%20CH-R%20II%20Export/individuell.svg" alt="Individual optics" class="feature-icon-img">
           </div>
-          <div class="feature-title">Individual optics</div>
-          <div class="feature-subtitle">Easy wheel individualization</div>
+          <div class="feature-title">{{ 'goUnlimited.features.individualOptics.title' | translate }}</div>
+          <div class="feature-subtitle">{{ 'goUnlimited.features.individualOptics.subtitle' | translate }}</div>
         </div>
       </div>
     </div>

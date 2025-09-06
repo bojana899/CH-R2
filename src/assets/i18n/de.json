@@ -3,7 +3,8 @@
     "slides": {
       "chrII": {
         "title": "CH-R II",
-        "buttonText": "CH-R II JETZT BESTELLEN"
+        "buttonText": "CH-R II JETZT BESTELLEN",
+        "subtitle": "MEHR ALS 345.600 VERSCHIEDENE STILE."
       },
       "action": {
         "title": "Aktion",
@@ -160,7 +161,8 @@
     "title": "Anpassungsoptionen für ein Rad, das Aufmerksamkeit erregt",
     "gallery": {
       "alt": "BBS Räder Galerie",
-      "viewAll": "VOLLSTÄNDIGE RADGALERIE ANSEHEN"
+      "viewAll": "VOLLSTÄNDIGE RADGALERIE ANSEHEN",
+      "showAll": "Alle Räder anzeigen >"
     }
   },
   "goUnlimited": {
@@ -202,6 +204,73 @@
     "buttons": {
       "buyNow": "JETZT KAUFEN",
       "configure": "JETZT KONFIGURIEREN"
+    },
+    "productNames": {
+      "standard": "CH-R II STANDARD",
+      "unlimited": "CH-R II UNLIMITED"
+    },
+    "badge": {
+      "new": "NEU"
+    },
+    "dimensions": {
+      "standard": {
+        "baseWheels": "45 Grundräder",
+        "details": "3 Konkavitäten<br>3 Durchmesser<br>5 Radbreiten<br>ab 15,5 kg"
+      },
+      "unlimited": {
+        "baseWheels": "63 Grundräder",
+        "details": "3 Konkavitäten<br>3 Durchmesser<br>7 Radbreiten<br>ab 15,2 kg"
+      }
+    },
+    "fit": {
+      "standard": {
+        "combinations": "10 Kombinationen",
+        "details": "5-Loch-Bolzenmuster – fest<br>2 Felgenoffsets – fest<br>Aluminium-Zentrierringe"
+      },
+      "unlimited": {
+        "combinations": "120 Kombinationen",
+        "details": "12 einstellbare Bolzenmuster<br>10 einstellbare Felgenoffsets<br>Verbund-Zentrierringe"
+      }
+    },
+    "style": {
+      "standard": {
+        "versions": "3 Versionen",
+        "details": "Permanent definiert<br>3 Radfarben<br>Nabendeckel - vordefiniert<br>Anfahrschutzringe - vordefiniert<br>Radschrauben - vordefiniert<br>Ventildeckel - vordefiniert"
+      },
+      "unlimited": {
+        "versions": "345.600 Versionen",
+        "details": "Frei konfigurierbar<br>80 Radfarben<br>24 Nabendeckel<br>6 Anfahrschutzringe<br>5 Radschrauben-Versionen<br>8 Ventildeckel"
+      }
+    },
+    "styleComponents": {
+      "title": "STILKOMPONENTEN - INDIVIDUALISIEREN SIE IHR UNLIMITED RAD",
+      "subtitle": "BBS UNLIMITED ZUBEHÖR KANN JEDERZEIT NACHGERÜSTET ODER UMGERÜSTET WERDEN",
+      "accessories": {
+        "centerCaps": "Nabendeckel",
+        "rimProtector": "Anfahrschutz",
+        "wheelBolts": "Radschrauben",
+        "valveCaps": "Ventildeckel"
+      },
+      "descriptions": {
+        "centerCaps": "Mit einer breiten Palette von Farb- und Logo-Kombinationen bieten BBS Nabendeckel maximale Individualisierung für jedes Rad. Von klassischen 2D-Designs bis hin zu exklusiven rotierenden Kappen mit 3D-Logos - es gibt die perfekte Kombination für jeden Stil. Dies macht jedes BBS Rad zu einem echten Unikat.",
+        "rimProtector": "Unsere Anfahrschutzringe schützen Ihre BBS Räder vor Kontakt mit Bordsteinen und anderen Schäden. Wählen Sie Anfahrschutzringe in Ihrer Lieblingsfarbe für den perfekten Look Ihres individuellen BBS Rades.",
+        "wheelBolts": "Hochwertige Radschrauben gewährleisten eine sichere Montage Ihrer BBS Räder. Verfügbar in verschiedenen Farben und Oberflächen, um perfekt zu Ihrem Raddesign zu passen.",
+        "valveCaps": "Premium Ventildeckel vervollständigen das Aussehen Ihrer BBS Räder. Verfügbar in verschiedenen Farben und Materialien für den perfekten letzten Schliff."
+      }
+    },
+    "features": {
+      "flexibleStyling": {
+        "title": "Flexibles Styling",
+        "subtitle": "Individualisieren Sie Ihre Räder jederzeit"
+      },
+      "upgradeable": {
+        "title": "Nachrüstbar",
+        "subtitle": "Zubehör ist auch später verfügbar"
+      },
+      "individualOptics": {
+        "title": "Individuelle Optik",
+        "subtitle": "Einfache Rad-Individualisierung"
+      }
     }
   },
   "wheelsUnlimited": {
@@ -220,5 +289,10 @@
     },
     "configureButton": "IHR RAD KONFIGURIEREN",
     "allDetailsButton": "ALLE DETAILS"
+  },
+  "wheelModels": {
+    "ciR": "CI-R",
+    "ccR": "CC-R",
+    "chrII": "CH-R II"
   }
 }
