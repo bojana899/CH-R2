@@ -478,3 +478,365 @@
     font-size: 13px;
   }
 }
+
+/* ========================================
+   FLOW FORMING SECTION
+   ======================================== */
+
+.flow-forming-section {
+  margin: 4rem 0;
+  text-align: center;
+}
+
+.flow-forming-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+/* Large laptops (1400px - 1599px) */
+@media (min-width: 1400px) {
+  .flow-forming-container {
+    gap: 30rem;
+  }
+}
+
+/* Extra large laptops (1600px - 1919px) */
+@media (min-width: 1600px) {
+  .flow-forming-container {
+    gap: 40rem;
+  }
+}
+
+/* Ultra-wide screens (1920px+) */
+@media (min-width: 1920px) {
+  .flow-forming-container {
+    gap: 50rem;
+  }
+}
+
+.flow-forming-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  min-width: 120px;
+}
+
+.flow-forming-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 1rem;
+  width: 100%;
+}
+
+.flow-forming-img {
+  max-width: 120px;
+  height: auto;
+  object-fit: contain;
+  display: block;
+}
+
+.flow-forming-text {
+  font-family: 'TT Norms Pro', sans-serif;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #2B2B30;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  white-space: nowrap;
+  margin-top: 0.5rem;
+}
+
+/* ========================================
+   STYLE COMPONENTS SECTION
+   ======================================== */
+
+.style-components-section {
+  margin: 4rem 0;
+  text-align: center;
+}
+
+.style-components-title {
+  font-family: 'TT Norms Pro', sans-serif;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #2B2B30;
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.style-components-subtitle {
+  font-family: 'TT Norms Pro', sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  color: #666666;
+  margin-bottom: 3rem;
+  line-height: 1.5;
+}
+
+.accessory-cards {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 3rem;
+}
+
+.accessory-card {
+  background: #2B2B30;
+  border-radius: 12px;
+  padding: 0;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  height: 559px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  overflow: hidden;
+}
+
+.accessory-card:first-child {
+  width: 343px;
+}
+
+.accessory-card:not(:first-child) {
+  width: 244px;
+}
+
+.accessory-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+}
+
+.accessory-title {
+  position: absolute;
+  bottom: 1rem;
+  left: 1rem;
+  font-family: 'TT Norms Pro', sans-serif;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #FFFFFF;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  text-align: left;
+  z-index: 10;
+}
+
+.accessory-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.accessory-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+/* Desktop images - show by default */
+.desktop-img {
+  display: block;
+}
+
+.mobile-img {
+  display: none;
+}
+
+.accessory-description {
+  max-width: 800px;
+  margin: 0 0 3rem 0;
+  text-align: left;
+  padding-left: 2rem;
+}
+
+.description-title {
+  font-family: 'TT Norms Pro', sans-serif;
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #2B2B30;
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.description-text {
+  font-family: 'TT Norms Pro', sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  color: #666666;
+  line-height: 1.6;
+}
+
+.feature-highlights {
+  display: flex;
+  justify-content: center;
+  gap: 3rem;
+  flex-wrap: wrap;
+}
+
+.feature-item {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  text-align: left;
+  max-width: 250px;
+}
+
+.feature-icon {
+  font-size: 2rem;
+  flex-shrink: 0;
+}
+
+.feature-text {
+  font-family: 'TT Norms Pro', sans-serif;
+  font-size: 0.9rem;
+  color: #2B2B30;
+  line-height: 1.4;
+}
+
+.feature-text strong {
+  font-weight: 600;
+  display: block;
+  margin-bottom: 0.25rem;
+}
+
+/* ========================================
+   RESPONSIVE DESIGN FOR NEW SECTIONS
+   ======================================== */
+
+/* Tablets */
+@media (max-width: 1024px) {
+  .flow-forming-container {
+    gap: 1.5rem;
+  }
+  
+  .accessory-cards {
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+  
+  .accessory-card:first-child {
+    width: 343px;
+  }
+  
+  .accessory-card:not(:first-child) {
+    width: 244px;
+  }
+  
+  .feature-highlights {
+    gap: 2rem;
+  }
+}
+
+/* Mobile devices */
+@media (max-width: 768px) {
+  .flow-forming-container {
+    flex-direction: column;
+    gap: 2rem;
+    align-items: center;
+  }
+  
+  .flow-forming-item {
+    min-width: auto;
+    width: 100%;
+    max-width: 200px;
+  }
+  
+  .flow-forming-img {
+    max-width: 100px;
+  }
+  
+  .flow-forming-text {
+    font-size: 0.9rem;
+    white-space: normal;
+    text-align: center;
+  }
+  
+  .style-components-title {
+    font-size: 1.25rem;
+  }
+  
+  .style-components-subtitle {
+    font-size: 0.9rem;
+  }
+  
+  .accessory-cards {
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+  
+  .accessory-card {
+    padding: 0;
+    width: 100% !important;
+    max-width: 343px;
+    height: 400px;
+  }
+  
+  .accessory-image {
+    height: 100%;
+  }
+  
+  .accessory-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  /* Show mobile images on mobile devices */
+  .desktop-img {
+    display: none;
+  }
+  
+  .mobile-img {
+    display: block;
+  }
+  
+  .feature-highlights {
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+  }
+  
+  .feature-item {
+    text-align: center;
+    max-width: 100%;
+  }
+  
+  .description-text {
+    font-size: 0.9rem;
+  }
+  
+  .accessory-description {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+}
+
+/* Small mobile devices */
+@media (max-width: 480px) {
+  .style-components-title {
+    font-size: 1.125rem;
+  }
+  
+  .accessory-card {
+    padding: 0.75rem;
+  }
+  
+  .accessory-title {
+    font-size: 0.9rem;
+  }
+  
+  .feature-text {
+    font-size: 0.8rem;
+  }
+}
