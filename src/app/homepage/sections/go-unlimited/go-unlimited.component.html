@@ -178,7 +178,7 @@
       <p class="style-components-subtitle">BBS UNLIMITED ACCESSORIES CAN BE RETROFITTED OR CONVERTED AT ANY TIME</p>
       
       <div class="accessory-cards">
-        <div class="accessory-card">
+        <div class="accessory-card" [class.expanded]="selectedAccessory === 0" (click)="selectAccessory(0)">
           <h4 class="accessory-title">Center caps</h4>
           <div class="accessory-image">
             <img src="assets/BBS CH-R II Export/BBS_Zubehor_BG_Nabendeckel.jpg" alt="Center caps" class="accessory-img desktop-img">
@@ -186,7 +186,7 @@
           </div>
         </div>
         
-        <div class="accessory-card">
+        <div class="accessory-card" [class.expanded]="selectedAccessory === 1" (click)="selectAccessory(1)">
           <h4 class="accessory-title">Rim protector</h4>
           <div class="accessory-image">
             <img src="assets/BBS CH-R II Export/BBS_Zubehor_BG_Anfahrschutz.jpg" alt="Rim protector" class="accessory-img desktop-img">
@@ -194,7 +194,7 @@
           </div>
         </div>
         
-        <div class="accessory-card">
+        <div class="accessory-card" [class.expanded]="selectedAccessory === 2" (click)="selectAccessory(2)">
           <h4 class="accessory-title">Wheel bolts</h4>
           <div class="accessory-image">
             <img src="assets/BBS CH-R II Export/BBS_Zubehor_BG_Radschrauben.jpg" alt="Wheel bolts" class="accessory-img desktop-img">
@@ -202,7 +202,7 @@
           </div>
         </div>
         
-        <div class="accessory-card">
+        <div class="accessory-card" [class.expanded]="selectedAccessory === 3" (click)="selectAccessory(3)">
           <h4 class="accessory-title">Valve Caps</h4>
           <div class="accessory-image">
             <img src="assets/BBS CH-R II Export/BBS_Zubehor_BG_Ventildeckel.jpg" alt="Valve caps" class="accessory-img desktop-img">
@@ -212,11 +212,9 @@
       </div>
       
       <div class="accessory-description">
-        <h4 class="description-title">Center caps</h4>
+        <h4 class="description-title">{{ selectedAccessory === 0 ? 'Center caps' : selectedAccessory === 1 ? 'Rim protector' : selectedAccessory === 2 ? 'Wheel bolts' : 'Valve Caps' }}</h4>
         <p class="description-text">
-          With a wide range of color and logo combinations, BBS center caps offer maximum customization for any wheel. 
-          From classic 2D designs to exclusive rotating caps with 3D logos - there's a perfect match for every style. 
-          This makes every BBS wheel a true one-of-a-kind.
+          {{ getAccessoryDescription(selectedAccessory) }}
         </p>
       </div>
       

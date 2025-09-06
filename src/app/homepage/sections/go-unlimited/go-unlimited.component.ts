@@ -34,6 +34,12 @@ export class GoUnlimitedComponent {
   // Selected wheel states
   selectedStandardWheel = 0;
   selectedUnlimitedWheel = 0;
+  
+  // Selected feature state
+  selectedFeature = 0;
+  
+  // Selected accessory state (separate from feature cards)
+  selectedAccessory = 0;
 
   // Standard wheel image
   standardWheelImage = {
@@ -101,6 +107,32 @@ export class GoUnlimitedComponent {
     this.selectedUnlimitedWheel = index;
     this.unlimitedWheelImage.src = this.wheelSelectors[index].src;
   }
+
+  // Feature selection method
+  selectFeature(index: number) {
+    console.log('Selecting feature:', index);
+    console.log('Current selectedFeature before:', this.selectedFeature);
+    this.selectedFeature = index;
+    console.log('Current selectedFeature after:', this.selectedFeature);
+  }
+
+  // Accessory selection method
+  selectAccessory(index: number) {
+    console.log('Selecting accessory:', index);
+    this.selectedAccessory = index;
+  }
+
+  // Get description text for selected accessory
+  getAccessoryDescription(index: number): string {
+    const descriptions = [
+      "With a wide range of color and logo combinations, BBS center caps offer maximum customization for any wheel. From classic 2D designs to exclusive rotating caps with 3D logos - there's a perfect match for every style. This makes every BBS wheel a true one-of-a-kind.",
+      "Our rim protectors protect your BBS wheels from contact with curbs and other damage. Choose rim protectors in your favorite color for the perfect look of your individual BBS wheel.",
+      "High-quality wheel bolts ensure secure mounting of your BBS wheels. Available in various colors and finishes to match your wheel design perfectly.",
+      "Premium valve caps complete the look of your BBS wheels. Available in multiple colors and materials for the perfect finishing touch."
+    ];
+    return descriptions[index] || descriptions[0];
+  }
+
 
   // Color swatches for Standard
   standardColors = [

@@ -146,17 +146,17 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 15rem;
+  gap: 20rem;
   margin-bottom: 2rem;
   width: 100%;
-  padding: 0 2rem;
+  padding: 0 1rem;
   box-sizing: border-box;
 }
 
 /* Navigation Arrows */
 .nav-arrow {
-  width: 40px;
-  height: 40px;
+  width: 22px;
+  height: 22px;
   border: 2px solid #D3D3D3;
   border-radius: 50%;
   background: white;

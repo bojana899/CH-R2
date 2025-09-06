@@ -597,13 +597,15 @@
   flex-direction: column;
   position: relative;
   overflow: hidden;
+  cursor: pointer;
 }
 
-.accessory-card:first-child {
-  width: 343px;
+.accessory-card.expanded {
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+  width: 300px !important;
 }
 
-.accessory-card:not(:first-child) {
+.accessory-card {
   width: 244px;
 }
 
@@ -684,7 +686,8 @@
   margin: 100px 0 0 0;
   display: flex;
   justify-content: center;
-  gap: 5rem;
+  align-items: center;
+  gap: 4rem;
   flex-wrap: nowrap;
 }
 
@@ -700,12 +703,24 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  transition: transform 0.3s ease;
+  transition: all 0.3s ease;
   margin: 0;
+  cursor: pointer;
+  position: relative;
+  z-index: 10;
+  pointer-events: auto;
+  border: 2px solid transparent;
 }
 
 .feature-card:hover {
   transform: translateY(-4px);
+}
+
+.feature-card.expanded {
+  max-width: 400px !important;
+  height: auto !important;
+  min-height: 200px !important;
+  background: rgba(255, 255, 255, 0.1) !important;
 }
 
 .feature-icon {
@@ -738,6 +753,16 @@
   line-height: 1.4;
   text-align: center;
   margin: 0;
+}
+
+.feature-description {
+  font-family: 'TT Norms Pro', sans-serif;
+  font-size: 0.9rem;
+  color: #666666;
+  line-height: 1.5;
+  text-align: center;
+  margin: 1rem 0 0 0;
+  padding: 0 1rem;
 }
 
 /* ========================================
